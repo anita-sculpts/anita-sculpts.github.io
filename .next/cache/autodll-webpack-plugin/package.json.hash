@@ -1,0 +1,1 @@
+{"name":"sculpture-site","version":"1.0.0","main":"index.js","license":"MIT","dependencies":{"next":"^9.2.0","react":"^16.12.0","react-dom":"^16.12.0"},"scripts":{"dev":"next","build":"next build","start":"next start"},"devDependencies":{"@types/node":"^13.1.8","@types/react":"^16.9.17","typescript":"^3.7.5"},"readme":"ERROR: No README data found!","_id":"sculpture-site@1.0.0"}

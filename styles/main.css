@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Judson:700|Roboto:100&display=swap');
+html, body {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.intro-container {
+    background: url("../images/chintatown_nyc.jpg") no-repeat center center fixed;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+}
+
+.header-container {
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+
+    font-size: 4em;
+}
+
+.intro-header-container {
+    margin-top: 30vh;
+}
+
+.sculptures-container {
+    
+}
+
+.for-sale-container {
+    background: url("../images/ep_naturalwhite.png");
+    top: 100vh;
+    bottom: -100vh;
+}
+
+.gallery-container {
+    background: url("../images/lighthouse.jpg") no-repeat center center fixed;
+    background-size: cover;
+    top: 200vh;
+    bottom: -200vh;
+}
+
+.biography-container {
+    background: #333;
+    top: 300vh;
+    bottom: -250vh;
+}
+
+.biography-text-container {
+    color: white;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+@media only screen and (max-width: 775px) {
+    .header {
+        font-size: 3em;
+    }
+    
+    .biography-container {
+        bottom: -300vh;
+    }
+
+    .biography-text-container {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
