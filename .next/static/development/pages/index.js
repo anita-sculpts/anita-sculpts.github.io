@@ -421,6 +421,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _SculptureThumbnail__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./SculptureThumbnail */ "./components/SculptureThumbnail.tsx");
+/* harmony import */ var _sculpture_data_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../sculpture_data.json */ "./sculpture_data.json");
+var _sculpture_data_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../sculpture_data.json */ "./sculpture_data.json", 1);
 
 
 
@@ -442,12 +444,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-var test = {
-  name: "Sculpture",
-  forSale: true,
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-  images: ["https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"]
-};
+
 
 var SculpturesList =
 /*#__PURE__*/
@@ -464,7 +461,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var forSale = this.props.forSale;
-      var data = Array(40).fill(test).map(function (x) {
+      var data = Array(40).fill(_sculpture_data_json__WEBPACK_IMPORTED_MODULE_14__[0]).map(function (x) {
         return _objectSpread({}, x, {
           forSale: Math.random() > 0.5
         });
@@ -473,7 +470,7 @@ function (_React$Component) {
         className: "sculptures-list-container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 17
         },
         __self: this
       }, data.filter(function (sculpture) {
@@ -485,7 +482,7 @@ function (_React$Component) {
           imageUrl: sculpture.images[0],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 22
+            lineNumber: 19
           },
           __self: this
         });
@@ -9601,6 +9598,17 @@ var Index = function Index() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
+
+/***/ }),
+
+/***/ "./sculpture_data.json":
+/*!*****************************!*\
+  !*** ./sculpture_data.json ***!
+  \*****************************/
+/*! exports provided: 0, 1, 2, 3, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"name\":\"Sculpture\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 2\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"name\":\"Sculpture 3\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 4\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
 
 /***/ }),
 
