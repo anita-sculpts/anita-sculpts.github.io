@@ -20,7 +20,6 @@ export default class SculpturesList extends React.Component<Props> {
             <div className="sculptures-list-container">
                 {data.filter(sculpture => sculpture.forSale === forSale)
                     .map((sculpture, i) => <SculptureThumbnail key={i}
-                        forSale={sculpture.forSale}
                         imageName={sculpture.name}
                         imageUrl={sculpture.images[0]}
                         />)}

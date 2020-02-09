@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface Props {
@@ -9,9 +10,11 @@ export default class SculpturesSeeAll extends React.Component<Props> {
         const { forSale } = this.props;
 
         return (
-            <a className="see-all" href="#">
-                See All
-            </a>
+            <Link href="/p/[id]" as={`/p/${forSale ? "_forSale" : "_notForSale"}`}>
+                <a className="see-all">
+                    See All
+                </a>
+            </Link>
         )
     }
 }
