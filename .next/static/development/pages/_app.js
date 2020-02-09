@@ -845,6 +845,24 @@ exports.push([module.i, "html, body {\n    margin: 0;\n}\n\n.container {\n    po
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/sculpture.css":
+/*!******************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??__nextjs_postcss!./styles/sculpture.css ***!
+  \******************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Imports
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../images/ep_naturalwhite.png */ "./images/ep_naturalwhite.png");
+var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
+// Module
+exports.push([module.i, ".sculpture-container {\n    background: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n    width: 100vw;\n    height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.sculpture-photo-container {\n    padding-top: 12px;\n    max-height: 75vh;\n    display: flex;\n    flex-direction: column;\n}\n\n.sculpture-photo {\n    width: auto;\n    max-height: 70vh;\n}\n\n.carousal-controls-container {\n    display: flex;\n    justify-content: space-between;\n    font-size: 3em;\n}\n\n.carousal-control {\n    cursor: pointer;\n}\n\n.carousal-control:hover {\n    opacity: 0.8;\n}\n\n.sculpture-text-container {\n    padding-top: 16px;\n}\n\n@media only screen and (max-width: 775px) {\n    .sculpture-container {\n        height: 120vh;\n    }\n\n    .sculpture-text-container {\n        padding-top: 28px;\n    }\n}\n\n@media only screen and (max-height: 412px) {\n    .sculpture-container {\n        height: 138vh;\n    }\n}", "",{"version":3,"sources":["sculpture.css"],"names":[],"mappings":"AAAA;IACI,8CAAgD;IAChD,YAAY;IACZ,aAAa;IACb,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,gBAAgB;IAChB,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,WAAW;IACX,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,cAAc;AAClB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI;QACI,aAAa;IACjB;;IAEA;QACI,iBAAiB;IACrB;AACJ;;AAEA;IACI;QACI,aAAa;IACjB;AACJ","file":"sculpture.css","sourcesContent":[".sculpture-container {\n    background: url(\"../images/ep_naturalwhite.png\");\n    width: 100vw;\n    height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.sculpture-photo-container {\n    padding-top: 12px;\n    max-height: 75vh;\n    display: flex;\n    flex-direction: column;\n}\n\n.sculpture-photo {\n    width: auto;\n    max-height: 70vh;\n}\n\n.carousal-controls-container {\n    display: flex;\n    justify-content: space-between;\n    font-size: 3em;\n}\n\n.carousal-control {\n    cursor: pointer;\n}\n\n.carousal-control:hover {\n    opacity: 0.8;\n}\n\n.sculpture-text-container {\n    padding-top: 16px;\n}\n\n@media only screen and (max-width: 775px) {\n    .sculpture-container {\n        height: 120vh;\n    }\n\n    .sculpture-text-container {\n        padding-top: 28px;\n    }\n}\n\n@media only screen and (max-height: 412px) {\n    .sculpture-container {\n        height: 138vh;\n    }\n}"]}]);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
@@ -1333,10 +1351,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/main.css */ "./styles/main.css");
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_main_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/sculpture.css */ "./styles/sculpture.css");
+/* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3__);
 
 var _jsxFileName = "/home/nick/Desktop/sculpture-site/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 function MyApp(_ref) {
   var Component = _ref.Component,
@@ -1344,7 +1365,7 @@ function MyApp(_ref) {
   return __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: this
   }));
@@ -1396,6 +1417,67 @@ if (true) {
       /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/main.css",
       function () {
         var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/main.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./styles/sculpture.css":
+/*!******************************!*\
+  !*** ./styles/sculpture.css ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./sculpture.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/sculpture.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./sculpture.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/sculpture.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./sculpture.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/sculpture.css");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];

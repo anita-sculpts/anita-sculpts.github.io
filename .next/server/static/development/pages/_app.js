@@ -152,10 +152,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/main.css */ "./styles/main.css");
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_main_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/sculpture.css */ "./styles/sculpture.css");
+/* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3__);
 
 var _jsxFileName = "/home/nick/Desktop/sculpture-site/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 function MyApp({
   Component,
@@ -164,7 +167,7 @@ function MyApp({
   return __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: this
   }));
@@ -176,6 +179,17 @@ function MyApp({
 /*!*************************!*\
   !*** ./styles/main.css ***!
   \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./styles/sculpture.css":
+/*!******************************!*\
+  !*** ./styles/sculpture.css ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

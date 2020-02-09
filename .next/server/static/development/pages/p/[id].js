@@ -88,10 +88,154 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/Header.tsx":
+/*!*******************************!*\
+  !*** ./components/Header.tsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/nick/Desktop/sculpture-site/components/Header.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    const {
+      children,
+      addTopMargin,
+      color,
+      useSerif
+    } = this.props;
+    const style = {
+      marginTop: addTopMargin ? '0.5em' : '0em',
+      color: color !== null && color !== void 0 ? color : '$333',
+      fontFamily: useSerif ? "'Judson', serif" : "'Roboto', sans-serif"
+    };
+    return __jsx("h1", {
+      className: "header",
+      style: style,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, children);
+  }
+
+}
+
+/***/ }),
+
+/***/ "./components/ImageCarousal.tsx":
+/*!**************************************!*\
+  !*** ./components/ImageCarousal.tsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ImageCarousal; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/nick/Desktop/sculpture-site/components/ImageCarousal.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+class ImageCarousal extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      images: props.images,
+      index: 0
+    };
+    this.moveLeft = this.moveLeft.bind(this);
+    this.moveRight = this.moveRight.bind(this);
+  }
+
+  moveLeft() {
+    const i = this.state.index;
+
+    if (i === 0) {
+      this.setState({
+        index: this.state.images.length - 1
+      });
+    } else {
+      this.setState({
+        index: i - 1
+      });
+    }
+  }
+
+  moveRight() {
+    const i = this.state.index;
+
+    if (i === this.state.images.length - 1) {
+      this.setState({
+        index: 0
+      });
+    } else {
+      this.setState({
+        index: i + 1
+      });
+    }
+  }
+
+  render() {
+    return __jsx("div", {
+      className: "sculpture-photo-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "sculpture-photo",
+      src: this.state.images[this.state.index],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "carousal-controls-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "carousal-control",
+      onClick: this.moveLeft,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    }, "\u2190"), __jsx("div", {
+      className: "carousal-control",
+      onClick: this.moveRight,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44
+      },
+      __self: this
+    }, "\u2192")));
+  }
+
+}
+;
+
+/***/ }),
 
 /***/ "./pages/p/[id].tsx":
 /*!**************************!*\
@@ -108,15 +252,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../sculpture_data.json */ "./sculpture_data.json");
 var _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../sculpture_data.json */ "./sculpture_data.json", 1);
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Header */ "./components/Header.tsx");
+/* harmony import */ var _components_ImageCarousal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/ImageCarousal */ "./components/ImageCarousal.tsx");
 var _jsxFileName = "/home/nick/Desktop/sculpture-site/pages/p/[id].tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
 const SculpturePage = () => {
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
   let currentSculptureName = router.query.id;
+
+  if (currentSculptureName === undefined) {
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: undefined
+    });
+  }
+
   let currentSculpture;
   let sculptures = [];
 
@@ -131,20 +290,52 @@ const SculpturePage = () => {
     sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === currentSculpture.forSale);
   }
 
+  let forSaleText = null;
+
+  if (currentSculpture.forSale) {
+    forSaleText = __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: undefined
+    }, "To purchase, email anita-sculpts@protonmail.com");
+  }
+
   return __jsx("div", {
+    className: "sculpture-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 42
     },
     __self: undefined
-  }, currentSculpture.name, currentSculpture.description, currentSculpture.forSale, __jsx("img", {
-    src: currentSculpture.images[0],
+  }, __jsx(_components_ImageCarousal__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    images: currentSculpture.images,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 43
     },
     __self: undefined
-  }));
+  }), __jsx("div", {
+    className: "sculpture-text-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: undefined
+  }, currentSculpture.name), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }, currentSculpture.description), forSaleText));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SculpturePage);
@@ -162,7 +353,7 @@ module.exports = JSON.parse("[{\"name\":\"Sculpture\",\"forSale\":true,\"descrip
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!********************************!*\
   !*** multi ./pages/p/[id].tsx ***!
   \********************************/
