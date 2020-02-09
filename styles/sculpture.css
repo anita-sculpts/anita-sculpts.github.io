@@ -1,7 +1,11 @@
-.sculpture-container {
-    background: url("../images/ep_naturalwhite.png");
-    width: 100vw;
+.sculpture-page-container {
     height: 100vh;
+    display: flex;
+    background: url("../images/ep_naturalwhite.png");
+}
+
+.sculpture-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +19,7 @@
 }
 
 .sculpture-photo {
-    max-width: 100%;
+    max-width: 70vw;
     max-height: 70vh;
 }
 
@@ -35,6 +39,10 @@
 
 .sculpture-text-container {
     padding-top: 16px;
+}
+
+.sculpture-body-text-container {
+    padding-left: 8px;
 }
 
 @media only screen and (max-width: 775px) {

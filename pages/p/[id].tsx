@@ -5,6 +5,7 @@ import SculptureData from '../../sculpture_data.json';
 
 import Header from '../../components/Header';
 import ImageCarousal from '../../components/ImageCarousal';
+import NavSideBar from '../../components/NavSideBar';
 
 type Sculpture = {
     name: string,
@@ -16,7 +17,7 @@ type Sculpture = {
 const SculpturePage: NextPage = () => {
     const router = useRouter();
     let currentSculptureName = router.query.id;
-    if (currentSculptureName === undefined) {
+    if (typeof currentSculptureName !== 'string')  {
         return <div />;
     }
 
@@ -39,12 +40,17 @@ const SculpturePage: NextPage = () => {
     }
     
     return (
-        <div className='sculpture-container'>
-            <ImageCarousal images={currentSculpture.images} />
-            <div className='sculpture-text-container'>
-                <Header>{currentSculpture.name}</Header>
-                <p>{currentSculpture.description}</p>
-                {forSaleText}
+        <div className="sculpture-page-container">
+            <NavSideBar currentSculptureName={currentSculptureName} />
+            <div className="sculpture-container">
+                <ImageCarousal images={currentSculpture.images} />
+                <div className="sculpture-text-container">
+                    <Header>{currentSculpture.name}</Header>
+                    <div className="sculpture-body-text-container">
+                        <p>{currentSculpture.description}</p>
+                        {forSaleText}
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -845,6 +845,20 @@ exports.push([module.i, "html, body {\n    margin: 0;\n}\n\n.container {\n    po
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/nav.css":
+/*!************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??__nextjs_postcss!./styles/nav.css ***!
+  \************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, "/*\nCredits: https://codepen.io/erikterwan/pen/EVzeRP\nMIT License\nCopyright 2020 Anita Sculpts\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n \n #menuToggle\n {\n   display: block;\n   position: absolute;\n   top: 12px;\n   left: 12px;\n   \n   z-index: 1;\n   \n   -webkit-user-select: none;\n   \n      -moz-user-select: none;\n   \n       -ms-user-select: none;\n   \n           user-select: none;\n }\n \n #menuToggle a\n {\n   text-decoration: none;\n   color: #232323;\n   \n   -webkit-transition: color 0.3s ease;\n   \n   transition: color 0.3s ease;\n }\n \n #menuToggle a:hover\n {\n   color: tomato;\n }\n \n \n #menuToggle input\n {\n   display: block;\n   width: 40px;\n   height: 32px;\n   position: absolute;\n   top: -7px;\n   left: -5px;\n   \n   cursor: pointer;\n   \n   opacity: 0; /* hide this */\n   z-index: 2; /* and place it over the hamburger */\n   \n   -webkit-touch-callout: none;\n }\n \n /*\n  * Create hamburger\n  */\n #menuToggle span\n {\n   display: block;\n   width: 33px;\n   height: 4px;\n   margin-bottom: 5px;\n   position: relative;\n   \n   background: #333;\n   border-radius: 3px;\n   \n   z-index: 1;\n   \n   -webkit-transform-origin: 4px 0px;\n   \n           transform-origin: 4px 0px;\n   \n   -webkit-transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),\n               opacity 0.55s ease,\n               -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n   \n   transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),\n               opacity 0.55s ease,\n               -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n   \n   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),\n               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),\n               opacity 0.55s ease;\n   \n   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),\n               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),\n               opacity 0.55s ease,\n               -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n }\n \n #menuToggle span:first-child\n {\n   -webkit-transform-origin: 0% 0%;\n           transform-origin: 0% 0%;\n }\n \n #menuToggle span:nth-last-child(2)\n {\n   -webkit-transform-origin: 0% 100%;\n           transform-origin: 0% 100%;\n }\n \n /* \n  * Transform all the slices of hamburger\n  * into a crossmark.\n  */\n #menuToggle input:checked ~ span\n {\n   opacity: 1;\n   -webkit-transform: rotate(45deg) translate(-2px, -1px);\n           transform: rotate(45deg) translate(-2px, -1px);\n   background: #232323;\n }\n \n #menuToggle input:checked ~ span:nth-last-child(3)\n {\n   opacity: 0;\n   -webkit-transform: rotate(0deg) scale(0.2, 0.2);\n           transform: rotate(0deg) scale(0.2, 0.2);\n }\n \n\n #menuToggle input:checked ~ span:nth-last-child(2)\n {\n   -webkit-transform: rotate(-45deg) translate(0, -1px);\n           transform: rotate(-45deg) translate(0, -1px);\n }\n \n #menu\n {\n   position: absolute;\n   width: 300px;\n   margin: -100px 0 0 -50px;\n   padding: 50px;\n   padding-top: 125px;\n   \n   background: #ededed;\n   list-style-type: none;\n   -webkit-font-smoothing: antialiased;\n   /* to stop flickering of text in safari */\n   \n   -webkit-transform-origin: 0% 0%;\n   \n           transform-origin: 0% 0%;\n   -webkit-transform: translate(-100%, 0);\n           transform: translate(-100%, 0);\n   \n   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n   \n   transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n   \n   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n   \n   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n }\n \n #menu li\n {\n   padding: 10px 0;\n   font-size: 22px;\n }\n \n /*\n  * Slide in from left\n  */\n #menuToggle input:checked ~ ul\n {\n   -webkit-transform: none;\n           transform: none;\n }", "",{"version":3,"sources":["nav.css"],"names":[],"mappings":"AAAA;;;;;;;CAOC;;CAEA;;GAEE,cAAc;GACd,kBAAkB;GAClB,SAAS;GACT,UAAU;;GAEV,UAAU;;GAEV,yBAAiB;;MAAjB,sBAAiB;;OAAjB,qBAAiB;;WAAjB,iBAAiB;CACnB;;CAEA;;GAEE,qBAAqB;GACrB,cAAc;;GAEd,mCAA2B;;GAA3B,2BAA2B;CAC7B;;CAEA;;GAEE,aAAa;CACf;;;CAGA;;GAEE,cAAc;GACd,WAAW;GACX,YAAY;GACZ,kBAAkB;GAClB,SAAS;GACT,UAAU;;GAEV,eAAe;;GAEf,UAAU,EAAE,cAAc;GAC1B,UAAU,EAAE,oCAAoC;;GAEhD,2BAA2B;CAC7B;;CAEA;;GAEE;CACF;;GAEE,cAAc;GACd,WAAW;GACX,WAAW;GACX,kBAAkB;GAClB,kBAAkB;;GAElB,gBAAgB;GAChB,kBAAkB;;GAElB,UAAU;;GAEV,iCAAyB;;WAAzB,yBAAyB;;GAEzB;;qEAE8B;;GAF9B;;qEAE8B;;GAF9B;;iCAE8B;;GAF9B;;;qEAE8B;CAChC;;CAEA;;GAEE,+BAAuB;WAAvB,uBAAuB;CACzB;;CAEA;;GAEE,iCAAyB;WAAzB,yBAAyB;CAC3B;;CAEA;;;GAGE;CACF;;GAEE,UAAU;GACV,sDAA8C;WAA9C,8CAA8C;GAC9C,mBAAmB;CACrB;;CAEA;;GAEE,UAAU;GACV,+CAAuC;WAAvC,uCAAuC;CACzC;;;CAGA;;GAEE,oDAA4C;WAA5C,4CAA4C;CAC9C;;CAEA;;GAEE,kBAAkB;GAClB,YAAY;GACZ,wBAAwB;GACxB,aAAa;GACb,kBAAkB;;GAElB,mBAAmB;GACnB,qBAAqB;GACrB,mCAAmC;GACnC,yCAAyC;;GAEzC,+BAAuB;;WAAvB,uBAAuB;GACvB,sCAA8B;WAA9B,8BAA8B;;GAE9B,0EAA0D;;GAA1D,kEAA0D;;GAA1D,0DAA0D;;GAA1D,kHAA0D;CAC5D;;CAEA;;GAEE,eAAe;GACf,eAAe;CACjB;;CAEA;;GAEE;CACF;;GAEE,uBAAe;WAAf,eAAe;CACjB","file":"nav.css","sourcesContent":["/*\nCredits: https://codepen.io/erikterwan/pen/EVzeRP\nMIT License\nCopyright 2020 Anita Sculpts\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n \n #menuToggle\n {\n   display: block;\n   position: absolute;\n   top: 12px;\n   left: 12px;\n   \n   z-index: 1;\n   \n   user-select: none;\n }\n \n #menuToggle a\n {\n   text-decoration: none;\n   color: #232323;\n   \n   transition: color 0.3s ease;\n }\n \n #menuToggle a:hover\n {\n   color: tomato;\n }\n \n \n #menuToggle input\n {\n   display: block;\n   width: 40px;\n   height: 32px;\n   position: absolute;\n   top: -7px;\n   left: -5px;\n   \n   cursor: pointer;\n   \n   opacity: 0; /* hide this */\n   z-index: 2; /* and place it over the hamburger */\n   \n   -webkit-touch-callout: none;\n }\n \n /*\n  * Create hamburger\n  */\n #menuToggle span\n {\n   display: block;\n   width: 33px;\n   height: 4px;\n   margin-bottom: 5px;\n   position: relative;\n   \n   background: #333;\n   border-radius: 3px;\n   \n   z-index: 1;\n   \n   transform-origin: 4px 0px;\n   \n   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),\n               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),\n               opacity 0.55s ease;\n }\n \n #menuToggle span:first-child\n {\n   transform-origin: 0% 0%;\n }\n \n #menuToggle span:nth-last-child(2)\n {\n   transform-origin: 0% 100%;\n }\n \n /* \n  * Transform all the slices of hamburger\n  * into a crossmark.\n  */\n #menuToggle input:checked ~ span\n {\n   opacity: 1;\n   transform: rotate(45deg) translate(-2px, -1px);\n   background: #232323;\n }\n \n #menuToggle input:checked ~ span:nth-last-child(3)\n {\n   opacity: 0;\n   transform: rotate(0deg) scale(0.2, 0.2);\n }\n \n\n #menuToggle input:checked ~ span:nth-last-child(2)\n {\n   transform: rotate(-45deg) translate(0, -1px);\n }\n \n #menu\n {\n   position: absolute;\n   width: 300px;\n   margin: -100px 0 0 -50px;\n   padding: 50px;\n   padding-top: 125px;\n   \n   background: #ededed;\n   list-style-type: none;\n   -webkit-font-smoothing: antialiased;\n   /* to stop flickering of text in safari */\n   \n   transform-origin: 0% 0%;\n   transform: translate(-100%, 0);\n   \n   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n }\n \n #menu li\n {\n   padding: 10px 0;\n   font-size: 22px;\n }\n \n /*\n  * Slide in from left\n  */\n #menuToggle input:checked ~ ul\n {\n   transform: none;\n }"]}]);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/sculpture.css":
 /*!******************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??__nextjs_postcss!./styles/sculpture.css ***!
@@ -858,7 +872,7 @@ var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/cs
 var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../images/ep_naturalwhite.png */ "./images/ep_naturalwhite.png");
 var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
 // Module
-exports.push([module.i, ".sculpture-container {\n    background: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n    width: 100vw;\n    height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.sculpture-photo-container {\n    margin-top: 12px;\n    max-height: 75vh;\n    display: flex;\n    flex-direction: column;\n}\n\n.sculpture-photo {\n    max-width: 100%;\n    max-height: 70vh;\n}\n\n.carousal-controls-container {\n    display: flex;\n    justify-content: space-between;\n    font-size: 3em;\n}\n\n.carousal-control {\n    cursor: pointer;\n}\n\n.carousal-control:hover {\n    opacity: 0.8;\n}\n\n.sculpture-text-container {\n    padding-top: 16px;\n}\n\n@media only screen and (max-width: 775px) {\n    .sculpture-container {\n        height: 120vh;\n    }\n\n    .sculpture-text-container {\n        margin-top: 20px;\n    }\n}\n\n@media only screen and (max-height: 412px) {\n    .sculpture-container {\n        height: 140vh;\n    }\n}", "",{"version":3,"sources":["sculpture.css"],"names":[],"mappings":"AAAA;IACI,8CAAgD;IAChD,YAAY;IACZ,aAAa;IACb,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,cAAc;AAClB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI;QACI,aAAa;IACjB;;IAEA;QACI,gBAAgB;IACpB;AACJ;;AAEA;IACI;QACI,aAAa;IACjB;AACJ","file":"sculpture.css","sourcesContent":[".sculpture-container {\n    background: url(\"../images/ep_naturalwhite.png\");\n    width: 100vw;\n    height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.sculpture-photo-container {\n    margin-top: 12px;\n    max-height: 75vh;\n    display: flex;\n    flex-direction: column;\n}\n\n.sculpture-photo {\n    max-width: 100%;\n    max-height: 70vh;\n}\n\n.carousal-controls-container {\n    display: flex;\n    justify-content: space-between;\n    font-size: 3em;\n}\n\n.carousal-control {\n    cursor: pointer;\n}\n\n.carousal-control:hover {\n    opacity: 0.8;\n}\n\n.sculpture-text-container {\n    padding-top: 16px;\n}\n\n@media only screen and (max-width: 775px) {\n    .sculpture-container {\n        height: 120vh;\n    }\n\n    .sculpture-text-container {\n        margin-top: 20px;\n    }\n}\n\n@media only screen and (max-height: 412px) {\n    .sculpture-container {\n        height: 140vh;\n    }\n}"]}]);
+exports.push([module.i, ".sculpture-page-container {\n    height: 100vh;\n    display: flex;\n    background: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n}\n\n.sculpture-container {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.sculpture-photo-container {\n    margin-top: 12px;\n    max-height: 75vh;\n    display: flex;\n    flex-direction: column;\n}\n\n.sculpture-photo {\n    max-width: 70vw;\n    max-height: 70vh;\n}\n\n.carousal-controls-container {\n    display: flex;\n    justify-content: space-between;\n    font-size: 3em;\n}\n\n.carousal-control {\n    cursor: pointer;\n}\n\n.carousal-control:hover {\n    opacity: 0.8;\n}\n\n.sculpture-text-container {\n    padding-top: 16px;\n}\n\n.sculpture-body-text-container {\n    padding-left: 8px;\n}\n\n@media only screen and (max-width: 775px) {\n    .sculpture-container {\n        height: 120vh;\n    }\n\n    .sculpture-text-container {\n        margin-top: 20px;\n    }\n}\n\n@media only screen and (max-height: 412px) {\n    .sculpture-container {\n        height: 140vh;\n    }\n}", "",{"version":3,"sources":["sculpture.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,aAAa;IACb,8CAAgD;AACpD;;AAEA;IACI,WAAW;IACX,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,cAAc;AAClB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI;QACI,aAAa;IACjB;;IAEA;QACI,gBAAgB;IACpB;AACJ;;AAEA;IACI;QACI,aAAa;IACjB;AACJ","file":"sculpture.css","sourcesContent":[".sculpture-page-container {\n    height: 100vh;\n    display: flex;\n    background: url(\"../images/ep_naturalwhite.png\");\n}\n\n.sculpture-container {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.sculpture-photo-container {\n    margin-top: 12px;\n    max-height: 75vh;\n    display: flex;\n    flex-direction: column;\n}\n\n.sculpture-photo {\n    max-width: 70vw;\n    max-height: 70vh;\n}\n\n.carousal-controls-container {\n    display: flex;\n    justify-content: space-between;\n    font-size: 3em;\n}\n\n.carousal-control {\n    cursor: pointer;\n}\n\n.carousal-control:hover {\n    opacity: 0.8;\n}\n\n.sculpture-text-container {\n    padding-top: 16px;\n}\n\n.sculpture-body-text-container {\n    padding-left: 8px;\n}\n\n@media only screen and (max-width: 775px) {\n    .sculpture-container {\n        height: 120vh;\n    }\n\n    .sculpture-text-container {\n        margin-top: 20px;\n    }\n}\n\n@media only screen and (max-height: 412px) {\n    .sculpture-container {\n        height: 140vh;\n    }\n}"]}]);
 
 
 /***/ }),
@@ -1351,12 +1365,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/main.css */ "./styles/main.css");
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_main_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/sculpture.css */ "./styles/sculpture.css");
-/* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_nav_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/nav.css */ "./styles/nav.css");
+/* harmony import */ var _styles_nav_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_nav_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/sculpture.css */ "./styles/sculpture.css");
+/* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_sculpture_css__WEBPACK_IMPORTED_MODULE_4__);
 
 var _jsxFileName = "/home/nick/Desktop/sculpture-site/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 function MyApp(_ref) {
@@ -1365,7 +1382,7 @@ function MyApp(_ref) {
   return __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }));
@@ -1417,6 +1434,67 @@ if (true) {
       /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/main.css",
       function () {
         var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/main.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./styles/nav.css":
+/*!************************!*\
+  !*** ./styles/nav.css ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./nav.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/nav.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./nav.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/nav.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??__nextjs_postcss!./nav.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./styles/nav.css");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];

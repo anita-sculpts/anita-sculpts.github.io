@@ -237,6 +237,149 @@ class ImageCarousal extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Compone
 
 /***/ }),
 
+/***/ "./components/NavSideBar.tsx":
+/*!***********************************!*\
+  !*** ./components/NavSideBar.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavSideBar; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/nick/Desktop/sculpture-site/components/NavSideBar.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    const {
+      currentSculptureName
+    } = this.props;
+    return __jsx("nav", {
+      role: "navigation",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, __jsx("div", {
+      id: "menuToggle",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, __jsx("input", {
+      type: "checkbox",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }), __jsx("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }), __jsx("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }), __jsx("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }), __jsx("ul", {
+      id: "menu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, "Home")), __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, "About")), __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, "Info")), __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, "Contact")), __jsx("a", {
+      href: "https://erikterwan.com/",
+      target: "_blank",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, "Show me more"))))); // return (
+    //     <div className="nav-container">
+    //         <Header useSerif={true}>Home</Header>
+    //     </div>
+    // )
+  }
+
+}
+
+/***/ }),
+
 /***/ "./pages/p/[id].tsx":
 /*!**************************!*\
   !*** ./pages/p/[id].tsx ***!
@@ -254,9 +397,11 @@ __webpack_require__.r(__webpack_exports__);
 var _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../sculpture_data.json */ "./sculpture_data.json", 1);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Header */ "./components/Header.tsx");
 /* harmony import */ var _components_ImageCarousal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/ImageCarousal */ "./components/ImageCarousal.tsx");
+/* harmony import */ var _components_NavSideBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/NavSideBar */ "./components/NavSideBar.tsx");
 var _jsxFileName = "/home/nick/Desktop/sculpture-site/pages/p/[id].tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -266,11 +411,11 @@ const SculpturePage = () => {
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
   let currentSculptureName = router.query.id;
 
-  if (currentSculptureName === undefined) {
+  if (typeof currentSculptureName !== 'string') {
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 21
       },
       __self: undefined
     });
@@ -296,46 +441,67 @@ const SculpturePage = () => {
     forSaleText = __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 39
       },
       __self: undefined
     }, "To purchase, email anita-sculpts@protonmail.com");
   }
 
   return __jsx("div", {
+    className: "sculpture-page-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }, __jsx(_components_NavSideBar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    currentSculptureName: currentSculptureName,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  }), __jsx("div", {
     className: "sculpture-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx(_components_ImageCarousal__WEBPACK_IMPORTED_MODULE_4__["default"], {
     images: currentSculpture.images,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 46
     },
     __self: undefined
   }), __jsx("div", {
     className: "sculpture-text-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     },
     __self: undefined
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 48
     },
     __self: undefined
-  }, currentSculpture.name), __jsx("p", {
+  }, currentSculpture.name), __jsx("div", {
+    className: "sculpture-body-text-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
     },
     __self: undefined
-  }, currentSculpture.description), forSaleText));
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, currentSculpture.description), forSaleText))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SculpturePage);
