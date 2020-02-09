@@ -8,14 +8,14 @@
 }
 
 .sculpture-photo-container {
-    padding-top: 12px;
+    margin-top: 12px;
     max-height: 75vh;
     display: flex;
     flex-direction: column;
 }
 
 .sculpture-photo {
-    width: auto;
+    max-width: 100%;
     max-height: 70vh;
 }
 
@@ -43,12 +43,12 @@
     }
 
     .sculpture-text-container {
-        padding-top: 28px;
+        margin-top: 20px;
     }
 }
 
 @media only screen and (max-height: 412px) {
     .sculpture-container {
-        height: 138vh;
+        height: 140vh;
     }
 }
