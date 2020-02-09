@@ -35,26 +35,35 @@ html, body {
     margin-top: 30vh;
 }
 
-.for-sale-container {
-    background: url("../images/ep_naturalwhite.png");
-    top: 100vh;
-    bottom: -100vh;
+.thumbnail-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.gallery-container {
+.for-sale-container {
+    background: url("../images/ep_naturalwhite.png");
+    top: 100vh;
+    bottom: -100vh;
+}
+
+.container-divider {
     background: url("../images/lighthouse.jpg") no-repeat center center fixed;
     background-size: cover;
     top: 200vh;
-    bottom: -200vh;
+    bottom: -230vh;
+}
+
+.gallery-container {
+    background: url("../images/ep_naturalwhite.png");
+    top: 230vh;
+    bottom: -230vh;
 }
 
 .about-container {
     background: #333;
-    top: 300vh;
-    bottom: -250vh;
+    top: 330vh;
+    bottom: -300vh;
 }
 
 .about-text-container {
@@ -77,15 +86,24 @@ html, body {
     width: 240px;
     height: 240px;
     margin: 4px;
-    background: #000;
+}
+
+.sculpture-thumbnail:hover {
+    opacity: 0.8;
 }
 
 .see-all {
-    margin-top: 2vw;
+    position: relative;
+    margin-top: 4px;
+    padding: 4px;
     font-family: "Roboto", "sans-serif";
     font-size: 2em;
     text-decoration: none;
     color: black;
+}
+
+.see-all:hover {
+    border: 1px solid black;
 }
 
 @media only screen and (max-width: 775px) {
@@ -94,7 +112,7 @@ html, body {
     }
     
     .about-container {
-        bottom: -300vh;
+        bottom: -330vh;
     }
 
     .about-text-container {
