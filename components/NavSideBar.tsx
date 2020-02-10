@@ -2,12 +2,28 @@ import React from 'react';
 import Header from "./Header";
 import Link from 'next/link';
 
-interface Props {
+interface State {
+    expanded?: boolean;
+}
+
+interface Props extends State {
     currentSculpture: Sculpture;
     sculptures: Array<Sculpture>;
 }
 
-export default class NavSideBar extends React.Component<Props> {
+export default class NavSideBar extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+
+        this.state = {expanded: this.props.expanded ?? false};
+
+        this.onChange = this.onChange.bind(this);
+    }
+
+    onChange() {
+        this.setState({expanded: !this.state.expanded});
+    }
+
     render() {
         const { currentSculpture, sculptures } = this.props;
         const navHeaderText = currentSculpture.forSale ? "Available Sculptures" : "Gallery";
@@ -38,7 +54,10 @@ export default class NavSideBar extends React.Component<Props> {
             <nav role="navigation">
                 <div id="menuToggle">
                     {/* Hidden; for using :checked CSS selector. */}
-                    <input type="checkbox" id="menuCheckbox" />
+                    <input type="checkbox"
+                        id="menuCheckbox"
+                        checked={this.state.expanded} 
+                        onChange={this.onChange} />
                     {/* The hamburger bars. */}
                     <span></span>
                     <span></span>

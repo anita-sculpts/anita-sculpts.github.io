@@ -264,6 +264,22 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    var _this$props$expanded;
+
+    super(props);
+    this.state = {
+      expanded: (_this$props$expanded = this.props.expanded) !== null && _this$props$expanded !== void 0 ? _this$props$expanded : false
+    };
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange() {
+    this.setState({
+      expanded: !this.state.expanded
+    });
+  }
+
   render() {
     const {
       currentSculpture,
@@ -277,7 +293,7 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
         key: i,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 33
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -285,13 +301,13 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
         as: `/p/${sculptures[i % 2].name}`,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 34
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 35
         },
         __self: this
       }, sculptures[i % 2].name))));
@@ -301,7 +317,7 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       className: "sculpture-nav-list",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 40
       },
       __self: this
     }, // sculptures.map((s, i) => (
@@ -317,53 +333,55 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       role: "navigation",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 54
       },
       __self: this
     }, __jsx("div", {
       id: "menuToggle",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 55
       },
       __self: this
     }, __jsx("input", {
       type: "checkbox",
       id: "menuCheckbox",
+      checked: this.state.expanded,
+      onChange: this.onChange,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 57
       },
       __self: this
     }), __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 62
       },
       __self: this
     }), __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 63
       },
       __self: this
     }), __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 64
       },
       __self: this
     }), __jsx("ul", {
       id: "menu",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 66
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 67
       },
       __self: this
     }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -371,19 +389,19 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       fontSize: "2.5em",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49
+        lineNumber: 68
       },
       __self: this
     }, navHeaderText)), sculptureLinks, __jsx("hr", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 71
       },
       __self: this
     }), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 72
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -391,13 +409,13 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       as: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 73
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 74
       },
       __self: this
     }, "Back to Home"))))));
@@ -2241,13 +2259,17 @@ const SculpturePage = () => {
 
   let currentSculpture;
   let sculptures = [];
+  let expanded = false;
 
-  if (currentSculptureName === '_forSale') {
-    sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === true);
+  if (currentSculptureName === '_forSale' || currentSculptureName === '_gallery') {
+    if (currentSculptureName === '_forSale') {
+      sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === true);
+    } else if (currentSculptureName === '_gallery') {
+      sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === false);
+    }
+
     currentSculpture = sculptures[0];
-  } else if (currentSculptureName === '_gallery') {
-    sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === false);
-    currentSculpture = sculptures[0];
+    expanded = true;
   } else {
     currentSculpture = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.name === router.query.id)[0];
     sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === currentSculpture.forSale);
@@ -2259,7 +2281,7 @@ const SculpturePage = () => {
     forSaleText = __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 35
       },
       __self: undefined
     }, "To purchase, email anita-sculpts@protonmail.com");
@@ -2269,55 +2291,56 @@ const SculpturePage = () => {
     className: "sculpture-page-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: undefined
   }, __jsx(_components_NavSideBar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    expanded: expanded,
     currentSculpture: currentSculpture,
     sculptures: sculptures,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: undefined
   }), __jsx("div", {
     className: "sculpture-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: undefined
   }, __jsx(_components_ImageCarousal__WEBPACK_IMPORTED_MODULE_4__["default"], {
     images: currentSculpture.images,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: undefined
   }), __jsx("div", {
     className: "sculpture-text-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 46
     },
     __self: undefined
   }, currentSculpture.name), __jsx("div", {
     className: "sculpture-body-text-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 47
     },
     __self: undefined
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 48
     },
     __self: undefined
   }, currentSculpture.description), forSaleText))));

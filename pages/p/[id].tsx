@@ -15,13 +15,16 @@ const SculpturePage: NextPage = () => {
     }
 
     let currentSculpture: Sculpture;
-    let sculptures = [];
-    if (currentSculptureName === '_forSale') {
-        sculptures = SculptureData.filter(sculpture => sculpture.forSale === true);
+    let sculptures: Array<Sculpture> = [];
+    let expanded = false;
+    if (currentSculptureName === '_forSale' || currentSculptureName === '_gallery') {
+        if (currentSculptureName === '_forSale') {
+            sculptures = SculptureData.filter(sculpture => sculpture.forSale === true);
+        } else if (currentSculptureName === '_gallery') {
+            sculptures = SculptureData.filter(sculpture => sculpture.forSale === false);
+        }
         currentSculpture = sculptures[0];
-    } else if (currentSculptureName === '_gallery') {
-        sculptures = SculptureData.filter(sculpture => sculpture.forSale === false);
-        currentSculpture = sculptures[0];
+        expanded = true
     } else {
         currentSculpture = SculptureData.filter(sculpture => sculpture.name === router.query.id)[0];
         sculptures = SculptureData.filter(sculpture => sculpture.forSale === currentSculpture.forSale);
@@ -34,7 +37,9 @@ const SculpturePage: NextPage = () => {
     
     return (
         <div className="sculpture-page-container">
-            <NavSideBar currentSculpture={currentSculpture} sculptures={sculptures} />
+            <NavSideBar expanded={expanded} 
+                currentSculpture={currentSculpture}
+                sculptures={sculptures} />
             <div className="sculpture-container">
                 <ImageCarousal images={currentSculpture.images} />
                 <div className="sculpture-text-container">

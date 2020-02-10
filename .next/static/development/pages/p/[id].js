@@ -220,19 +220,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Header */ "./components/Header.tsx");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Header */ "./components/Header.tsx");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
 
 
 var _jsxFileName = "/home/nick/Desktop/sculpture-site/components/NavSideBar.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 
 
@@ -240,15 +242,31 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 var NavSideBar =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(NavSideBar, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(NavSideBar, _React$Component);
 
-  function NavSideBar() {
+  function NavSideBar(props) {
+    var _this$props$expanded;
+
+    var _this;
+
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, NavSideBar);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(NavSideBar).apply(this, arguments));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(NavSideBar).call(this, props));
+    _this.state = {
+      expanded: (_this$props$expanded = _this.props.expanded) !== null && _this$props$expanded !== void 0 ? _this$props$expanded : false
+    };
+    _this.onChange = _this.onChange.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
+    return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(NavSideBar, [{
+    key: "onChange",
+    value: function onChange() {
+      this.setState({
+        expanded: !this.state.expanded
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -262,21 +280,21 @@ function (_React$Component) {
           key: i,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 17
+            lineNumber: 33
           },
           __self: this
-        }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
           href: "/p/[id]",
           as: "/p/".concat(sculptures[i % 2].name),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 18
+            lineNumber: 34
           },
           __self: this
         }, __jsx("a", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 19
+            lineNumber: 35
           },
           __self: this
         }, sculptures[i % 2].name))));
@@ -286,7 +304,7 @@ function (_React$Component) {
         className: "sculpture-nav-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 40
         },
         __self: this
       }, // sculptures.map((s, i) => (
@@ -302,87 +320,89 @@ function (_React$Component) {
         role: "navigation",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 54
         },
         __self: this
       }, __jsx("div", {
         id: "menuToggle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 55
         },
         __self: this
       }, __jsx("input", {
         type: "checkbox",
         id: "menuCheckbox",
+        checked: this.state.expanded,
+        onChange: this.onChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 57
         },
         __self: this
       }), __jsx("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 62
         },
         __self: this
       }), __jsx("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 63
         },
         __self: this
       }), __jsx("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 64
         },
         __self: this
       }), __jsx("ul", {
         id: "menu",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 66
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 67
         },
         __self: this
-      }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_7__["default"], {
         color: "white",
         fontSize: "2.5em",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 68
         },
         __self: this
       }, navHeaderText)), sculptureLinks, __jsx("hr", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 71
         },
         __self: this
       }), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 72
         },
         __self: this
-      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/",
         as: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 73
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 74
         },
         __self: this
       }, "Back to Home"))))));
@@ -390,7 +410,7 @@ function (_React$Component) {
   }]);
 
   return NavSideBar;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
 
 
 
@@ -9210,17 +9230,21 @@ var SculpturePage = function SculpturePage() {
 
   var currentSculpture;
   var sculptures = [];
+  var expanded = false;
 
-  if (currentSculptureName === '_forSale') {
-    sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(function (sculpture) {
-      return sculpture.forSale === true;
-    });
+  if (currentSculptureName === '_forSale' || currentSculptureName === '_gallery') {
+    if (currentSculptureName === '_forSale') {
+      sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(function (sculpture) {
+        return sculpture.forSale === true;
+      });
+    } else if (currentSculptureName === '_gallery') {
+      sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(function (sculpture) {
+        return sculpture.forSale === false;
+      });
+    }
+
     currentSculpture = sculptures[0];
-  } else if (currentSculptureName === '_gallery') {
-    sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(function (sculpture) {
-      return sculpture.forSale === false;
-    });
-    currentSculpture = sculptures[0];
+    expanded = true;
   } else {
     currentSculpture = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(function (sculpture) {
       return sculpture.name === router.query.id;
@@ -9236,7 +9260,7 @@ var SculpturePage = function SculpturePage() {
     forSaleText = __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 35
       },
       __self: this
     }, "To purchase, email anita-sculpts@protonmail.com");
@@ -9246,55 +9270,56 @@ var SculpturePage = function SculpturePage() {
     className: "sculpture-page-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: this
   }, __jsx(_components_NavSideBar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    expanded: expanded,
     currentSculpture: currentSculpture,
     sculptures: sculptures,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: this
   }), __jsx("div", {
     className: "sculpture-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: this
   }, __jsx(_components_ImageCarousal__WEBPACK_IMPORTED_MODULE_4__["default"], {
     images: currentSculpture.images,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: this
   }), __jsx("div", {
     className: "sculpture-text-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 45
     },
     __self: this
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 46
     },
     __self: this
   }, currentSculpture.name), __jsx("div", {
     className: "sculpture-body-text-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 47
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 48
     },
     __self: this
   }, currentSculpture.description), forSaleText))));
