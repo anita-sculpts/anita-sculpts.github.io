@@ -235,18 +235,24 @@ function (_React$Component) {
           children = _this$props.children,
           addTopMargin = _this$props.addTopMargin,
           color = _this$props.color,
+          fontSize = _this$props.fontSize,
           useSerif = _this$props.useSerif;
       var style = {
         marginTop: addTopMargin ? '0.5em' : '0em',
         color: color !== null && color !== void 0 ? color : '$333',
         fontFamily: useSerif ? "'Judson', serif" : "'Roboto', sans-serif"
       };
+
+      if (typeof fontSize === 'string') {
+        style['fontSize'] = fontSize;
+      }
+
       return __jsx("h1", {
         className: "header",
         style: style,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 24
         },
         __self: this
       }, children);
@@ -461,7 +467,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var forSale = this.props.forSale;
-      var data = Array(40).fill(_sculpture_data_json__WEBPACK_IMPORTED_MODULE_14__[0]).map(function (x) {
+      var data = Array(40).fill(forSale ? _sculpture_data_json__WEBPACK_IMPORTED_MODULE_14__[0] : _sculpture_data_json__WEBPACK_IMPORTED_MODULE_14__[2]).map(function (x) {
         return _objectSpread({}, x, {
           forSale: Math.random() > 0.5
         });
@@ -544,7 +550,7 @@ function (_React$Component) {
       var forSale = this.props.forSale;
       return __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
         href: "/p/[id]",
-        as: "/p/".concat(forSale ? "_forSale" : "_notForSale"),
+        as: "/p/".concat(forSale ? "_forSale" : "_gallery"),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
@@ -9608,11 +9614,11 @@ var Index = function Index() {
 /*! exports provided: 0, 1, 2, 3, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Sculpture\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 2\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"name\":\"Sculpture 3\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 4\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
+module.exports = JSON.parse("[{\"name\":\"Sculpture\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 2\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"name\":\"Sculpture 3\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 4\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fnick%2FDesktop%2Fsculpture-site%2Fpages%2Findex.tsx ***!
   \******************************************************************************************************************************/
@@ -9635,5 +9641,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -6,7 +6,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
- 
+
  #menuToggle
  {
    display: block;
@@ -22,14 +22,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  #menuToggle a
  {
    text-decoration: none;
-   color: #232323;
+   color: #999;
    
    transition: color 0.3s ease;
  }
  
  #menuToggle a:hover
  {
-   color: tomato;
+   color: white;
  }
  
  
@@ -72,6 +72,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                opacity 0.55s ease;
  }
+
+ #menuToggle input:hover ~ span {
+   background: white;
+ }
  
  #menuToggle span:first-child
  {
@@ -91,7 +95,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   background: #7c7c7c;
+ }
+
+ #menuToggle input:checked:hover ~ span
+ {
+   background: white;
  }
  
  #menuToggle input:checked ~ span:nth-last-child(3)
@@ -109,12 +118,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  #menu
  {
    position: absolute;
-   width: 300px;
+   width: 400px;
+   height: 85vh;
    margin: -100px 0 0 -50px;
    padding: 50px;
-   padding-top: 125px;
-   
-   background: #ededed;
+   padding-top: 75px;
+
+   background: #333;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
@@ -128,9 +138,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  #menu li
  {
    padding: 10px 0;
-   font-size: 22px;
+ }
+
+ #menu li a {
+  font-size: 22px;
+ }
+
+ .sculpture-nav-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 75vh;
  }
  
+hr {
+  background-color: #7c7c7c;
+  height: 1px;
+  border: none;
+}
+
  /*
   * Slide in from left
   */
@@ -138,3 +164,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  {
    transform: none;
  }
+
+ @media only screen and (max-width: 775px) {
+  #menu {
+    width: 80vw;
+    height: 115vh;
+  }
+
+  .sculpture-nav-list {
+    max-height: 105vh;
+   }
+}
+
+@media only screen and (max-height: 412px) {
+  #menu {
+    width: 90vw;
+    height: 145vh;
+  }
+  .sculpture-nav-list {
+    max-height: 125vh;
+   }
+}

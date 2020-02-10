@@ -9,7 +9,7 @@ interface Props {
 export default class SculpturesList extends React.Component<Props> {
     render() {
         const {forSale} = this.props;
-        const data = Array(40).fill(SculptureData[0]).map((x) => {
+        const data = Array(40).fill(forSale ? SculptureData[0] : SculptureData[2]).map((x) => {
             return {...x, forSale: Math.random() > 0.5}
         });
 

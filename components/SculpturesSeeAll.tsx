@@ -10,7 +10,7 @@ export default class SculpturesSeeAll extends React.Component<Props> {
         const { forSale } = this.props;
 
         return (
-            <Link href="/p/[id]" as={`/p/${forSale ? "_forSale" : "_notForSale"}`}>
+            <Link href="/p/[id]" as={`/p/${forSale ? "_forSale" : "_gallery"}`}>
                 <a className="see-all">
                     See All
                 </a>

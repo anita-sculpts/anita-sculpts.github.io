@@ -7,13 +7,6 @@ import Header from '../../components/Header';
 import ImageCarousal from '../../components/ImageCarousal';
 import NavSideBar from '../../components/NavSideBar';
 
-type Sculpture = {
-    name: string,
-    description: string,
-    forSale: boolean,
-    images: Array<string>
-}
-
 const SculpturePage: NextPage = () => {
     const router = useRouter();
     let currentSculptureName = router.query.id;
@@ -26,7 +19,7 @@ const SculpturePage: NextPage = () => {
     if (currentSculptureName === '_forSale') {
         sculptures = SculptureData.filter(sculpture => sculpture.forSale === true);
         currentSculpture = sculptures[0];
-    } else if (currentSculptureName === '_notForSale') {
+    } else if (currentSculptureName === '_gallery') {
         sculptures = SculptureData.filter(sculpture => sculpture.forSale === false);
         currentSculpture = sculptures[0];
     } else {
@@ -41,7 +34,7 @@ const SculpturePage: NextPage = () => {
     
     return (
         <div className="sculpture-page-container">
-            <NavSideBar currentSculptureName={currentSculptureName} />
+            <NavSideBar currentSculpture={currentSculpture} sculptures={sculptures} />
             <div className="sculpture-container">
                 <ImageCarousal images={currentSculpture.images} />
                 <div className="sculpture-text-container">

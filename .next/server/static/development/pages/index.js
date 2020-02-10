@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -297,19 +297,25 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       children,
       addTopMargin,
       color,
+      fontSize,
       useSerif
     } = this.props;
-    const style = {
+    let style = {
       marginTop: addTopMargin ? '0.5em' : '0em',
       color: color !== null && color !== void 0 ? color : '$333',
       fontFamily: useSerif ? "'Judson', serif" : "'Roboto', sans-serif"
     };
+
+    if (typeof fontSize === 'string') {
+      style['fontSize'] = fontSize;
+    }
+
     return __jsx("h1", {
       className: "header",
       style: style,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 24
       },
       __self: this
     }, children);
@@ -471,7 +477,7 @@ class SculpturesList extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Compon
     const {
       forSale
     } = this.props;
-    const data = Array(40).fill(_sculpture_data_json__WEBPACK_IMPORTED_MODULE_9__[0]).map(x => {
+    const data = Array(40).fill(forSale ? _sculpture_data_json__WEBPACK_IMPORTED_MODULE_9__[0] : _sculpture_data_json__WEBPACK_IMPORTED_MODULE_9__[2]).map(x => {
       return _objectSpread({}, x, {
         forSale: Math.random() > 0.5
       });
@@ -525,7 +531,7 @@ class SculpturesSeeAll extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Comp
     } = this.props;
     return __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
       href: "/p/[id]",
-      as: `/p/${forSale ? "_forSale" : "_notForSale"}`,
+      as: `/p/${forSale ? "_forSale" : "_gallery"}`,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 13
@@ -2475,11 +2481,11 @@ const Index = () => {
 /*! exports provided: 0, 1, 2, 3, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Sculpture\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 2\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"name\":\"Sculpture 3\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 4\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
+module.exports = JSON.parse("[{\"name\":\"Sculpture\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 2\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"name\":\"Sculpture 3\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 4\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
