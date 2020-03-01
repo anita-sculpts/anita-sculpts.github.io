@@ -27,26 +27,15 @@ export default class NavSideBar extends React.Component<Props, State> {
     render() {
         const { currentSculpture, sculptures } = this.props;
         const navHeaderText = currentSculpture.price ? "Available Sculptures" : "Gallery";
-
-        const tmp = [];
-        for (let i=0; i < 22; i++) {
-            tmp.push(<li key={i}>
-                <Link href="/p/[id]" as={`/p/${sculptures[i%2].title}`}>
-                    <a onClick={this.onExpand}>{sculptures[i%2].title}</a>
-                </Link>
-            </li>);
-        }
-
         const sculptureLinks = <div className="sculpture-nav-list">
             {
-                // sculptures.map((s, i) => (
-                //     <li key={i}>
-                //         <Link href="/p/[id]" as={`/p/${s.title}`}>
-                //             <a onClick={this.onExpand}>{s.title}</a>
-                //         </Link>
-                //     </li>
-                // ))
-                tmp
+                sculptures.map((s, i) => (
+                    <li key={i}>
+                        <Link href="/p/[id]" as={`/p/${s.title}`}>
+                            <a onClick={this.onExpand}>{s.title}</a>
+                        </Link>
+                    </li>
+                ))
             }
         </div>;
 
