@@ -63,13 +63,13 @@ html, body {
 .about-container {
     background: #333;
     top: 330vh;
-    bottom: -300vh;
 }
 
-.about-text-container {
+.text-container {
     color: white;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    font-size: 20px;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .sculptures-list-container {
@@ -110,13 +110,9 @@ html, body {
     .header {
         font-size: 3em;
     }
-    
-    .about-container {
-        bottom: -330vh;
-    }
 
-    .about-text-container {
-        margin-left: 15vw;
-        margin-right: 15vw;
+    .text-container {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
