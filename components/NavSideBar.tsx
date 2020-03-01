@@ -17,10 +17,10 @@ export default class NavSideBar extends React.Component<Props, State> {
 
         this.state = {expanded: this.props.expanded ?? false};
 
-        this.onChange = this.onChange.bind(this);
+        this.onExpand = this.onExpand.bind(this);
     }
 
-    onChange() {
+    onExpand() {
         this.setState({expanded: !this.state.expanded});
     }
 
@@ -32,7 +32,7 @@ export default class NavSideBar extends React.Component<Props, State> {
         for (let i=0; i < 22; i++) {
             tmp.push(<li key={i}>
                 <Link href="/p/[id]" as={`/p/${sculptures[i%2].title}`}>
-                    <a>{sculptures[i%2].title}</a>
+                    <a onClick={this.onExpand}>{sculptures[i%2].title}</a>
                 </Link>
             </li>);
         }
@@ -41,8 +41,8 @@ export default class NavSideBar extends React.Component<Props, State> {
             {
                 // sculptures.map((s, i) => (
                 //     <li key={i}>
-                //         <Link href="/p/[id]" as={`/p/${s.name}`}>
-                //             <a>{s.name}</a>
+                //         <Link href="/p/[id]" as={`/p/${s.title}`}>
+                //             <a onClick={this.onExpand}>{s.title}</a>
                 //         </Link>
                 //     </li>
                 // ))
@@ -57,7 +57,7 @@ export default class NavSideBar extends React.Component<Props, State> {
                     <input type="checkbox"
                         id="menuCheckbox"
                         checked={this.state.expanded} 
-                        onChange={this.onChange} />
+                        onChange={this.onExpand} />
                     {/* The hamburger bars. */}
                     <span></span>
                     <span></span>

@@ -271,10 +271,10 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
     this.state = {
       expanded: (_this$props$expanded = this.props.expanded) !== null && _this$props$expanded !== void 0 ? _this$props$expanded : false
     };
-    this.onChange = this.onChange.bind(this);
+    this.onExpand = this.onExpand.bind(this);
   }
 
-  onChange() {
+  onExpand() {
     this.setState({
       expanded: !this.state.expanded
     });
@@ -305,6 +305,7 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
         },
         __self: this
       }, __jsx("a", {
+        onClick: this.onExpand,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
@@ -322,8 +323,8 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       __self: this
     }, // sculptures.map((s, i) => (
     //     <li key={i}>
-    //         <Link href="/p/[id]" as={`/p/${s.name}`}>
-    //             <a>{s.name}</a>
+    //         <Link href="/p/[id]" as={`/p/${s.title}`}>
+    //             <a onClick={this.onExpand}>{s.title}</a>
     //         </Link>
     //     </li>
     // ))
@@ -347,7 +348,7 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       type: "checkbox",
       id: "menuCheckbox",
       checked: this.state.expanded,
-      onChange: this.onChange,
+      onChange: this.onExpand,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57

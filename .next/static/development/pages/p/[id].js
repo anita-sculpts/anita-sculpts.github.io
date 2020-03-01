@@ -255,13 +255,13 @@ function (_React$Component) {
     _this.state = {
       expanded: (_this$props$expanded = _this.props.expanded) !== null && _this$props$expanded !== void 0 ? _this$props$expanded : false
     };
-    _this.onChange = _this.onChange.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
+    _this.onExpand = _this.onExpand.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
     return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(NavSideBar, [{
-    key: "onChange",
-    value: function onChange() {
+    key: "onExpand",
+    value: function onExpand() {
       this.setState({
         expanded: !this.state.expanded
       });
@@ -292,6 +292,7 @@ function (_React$Component) {
           },
           __self: this
         }, __jsx("a", {
+          onClick: this.onExpand,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 35
@@ -309,8 +310,8 @@ function (_React$Component) {
         __self: this
       }, // sculptures.map((s, i) => (
       //     <li key={i}>
-      //         <Link href="/p/[id]" as={`/p/${s.name}`}>
-      //             <a>{s.name}</a>
+      //         <Link href="/p/[id]" as={`/p/${s.title}`}>
+      //             <a onClick={this.onExpand}>{s.title}</a>
       //         </Link>
       //     </li>
       // ))
@@ -334,7 +335,7 @@ function (_React$Component) {
         type: "checkbox",
         id: "menuCheckbox",
         checked: this.state.expanded,
-        onChange: this.onChange,
+        onChange: this.onExpand,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57
