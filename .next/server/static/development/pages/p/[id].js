@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -285,7 +285,7 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       currentSculpture,
       sculptures
     } = this.props;
-    const navHeaderText = currentSculpture.forSale ? "Available Sculptures" : "Gallery";
+    const navHeaderText = currentSculpture.price ? "Available Sculptures" : "Gallery";
     const tmp = [];
 
     for (let i = 0; i < 22; i++) {
@@ -298,7 +298,7 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "/p/[id]",
-        as: `/p/${sculptures[i % 2].name}`,
+        as: `/p/${sculptures[i % 2].title}`,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34
@@ -310,7 +310,7 @@ class NavSideBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
           lineNumber: 35
         },
         __self: this
-      }, sculptures[i % 2].name))));
+      }, sculptures[i % 2].title))));
     }
 
     const sculptureLinks = __jsx("div", {
@@ -2243,6 +2243,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+const filterSculptures = price => {
+  if (price !== null) {
+    return _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.price !== null);
+  }
+
+  return _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.price === null);
+};
+
 const SculpturePage = () => {
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
   let currentSculptureName = router.query.id;
@@ -2251,7 +2259,7 @@ const SculpturePage = () => {
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 21
       },
       __self: undefined
     });
@@ -2263,35 +2271,86 @@ const SculpturePage = () => {
 
   if (currentSculptureName === '_forSale' || currentSculptureName === '_gallery') {
     if (currentSculptureName === '_forSale') {
-      sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === true);
+      sculptures = filterSculptures(1);
     } else if (currentSculptureName === '_gallery') {
-      sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === false);
+      sculptures = filterSculptures(null);
     }
 
     currentSculpture = sculptures[0];
     expanded = true;
   } else {
-    currentSculpture = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.name === router.query.id)[0];
-    sculptures = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.forSale === currentSculpture.forSale);
+    currentSculpture = _sculpture_data_json__WEBPACK_IMPORTED_MODULE_2__.filter(sculpture => sculpture.title === router.query.id)[0];
+    sculptures = filterSculptures(currentSculpture.price);
   }
 
-  let forSaleText = null;
+  let itemDescriptionElement = __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }, __jsx("b", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: undefined
+  }, "Medium:"), " ", currentSculpture.medium, " | ", __jsx("b", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: undefined
+  }, "Dimensions:"), " ", currentSculpture.dimensions);
 
-  if (currentSculpture.forSale) {
-    forSaleText = __jsx("p", {
+  let forSaleElement = null;
+
+  if (currentSculpture.price !== null) {
+    itemDescriptionElement = __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 46
       },
       __self: undefined
-    }, "To purchase, email anita-sculpts@protonmail.com");
+    }, __jsx("b", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: undefined
+    }, "Medium:"), " ", currentSculpture.medium, " | ", __jsx("b", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: undefined
+    }, "Dimensions:"), " ", currentSculpture.dimensions, " | ", __jsx("b", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: undefined
+    }, "Price:"), " ", currentSculpture.price);
+    forSaleElement = __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50
+      },
+      __self: undefined
+    }, __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: undefined
+    }, "To purchase, email anita-sculpts@protonmail(dot)com"));
   }
 
   return __jsx("div", {
     className: "sculpture-page-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 57
     },
     __self: undefined
   }, __jsx(_components_NavSideBar__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -2300,50 +2359,44 @@ const SculpturePage = () => {
     sculptures: sculptures,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 58
     },
     __self: undefined
   }), __jsx("div", {
     className: "sculpture-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 61
     },
     __self: undefined
   }, __jsx(_components_ImageCarousal__WEBPACK_IMPORTED_MODULE_4__["default"], {
     images: currentSculpture.images,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 62
     },
     __self: undefined
   }), __jsx("div", {
     className: "sculpture-text-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 63
     },
     __self: undefined
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 64
     },
     __self: undefined
-  }, currentSculpture.name), __jsx("div", {
+  }, currentSculpture.title), __jsx("div", {
     className: "sculpture-body-text-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 65
     },
     __self: undefined
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: undefined
-  }, currentSculpture.description), forSaleText))));
+  }, itemDescriptionElement, forSaleElement))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SculpturePage);
@@ -2354,14 +2407,14 @@ const SculpturePage = () => {
 /*!*****************************!*\
   !*** ./sculpture_data.json ***!
   \*****************************/
-/*! exports provided: 0, 1, 2, 3, default */
+/*! exports provided: 0, 1, 2, 3, 4, 5, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Sculpture\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 2\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"name\":\"Sculpture 3\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 4\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
+module.exports = JSON.parse("[{\"title\":\"Legato\",\"medium\":\"Alabaster—Rootbeer\",\"dimensions\":\"16” x 10 ½”x 8 ½”\",\"price\":5200,\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"title\":\"Reverie\",\"medium\":\"Alabaster—Oystershell\",\"dimensions\":\"12” x 20”x 10”\",\"price\":5800,\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"title\":\"Black Moon Rising\",\"medium\":\"African Wonderstone\",\"dimensions\":\"11” x 16” x 8”\",\"price\":null,\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"title\":\"Nosedive\",\"medium\":\"Clear Acrylic\",\"dimensions\":\"4” x 19 ½” x 4”\",\"price\":5600,\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"title\":\"Sublime\",\"medium\":\"Marble—Bianco Puro\",\"dimensions\":\"12” x 11 ½” x 6 ½”\",\"price\":6800,\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"title\":\"In the Garden\",\"medium\":\"Sculpture: Alabaster—Black, Base: Soapstone—Italian Green\",\"dimensions\":\"18” x 12” x 20”\",\"price\":null,\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!********************************!*\
   !*** multi ./pages/p/[id].tsx ***!
   \********************************/

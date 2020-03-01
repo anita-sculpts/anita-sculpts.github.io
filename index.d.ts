@@ -1,8 +1,9 @@
 declare global {
     type Sculpture = {
-        name: string,
-        description: string,
-        forSale: boolean,
+        title: string,
+        medium: string,
+        dimensions: string,
+        price: number?,
         images: Array<string>
     }
 }

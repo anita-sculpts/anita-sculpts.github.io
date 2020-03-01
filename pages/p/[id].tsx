@@ -7,6 +7,13 @@ import Header from '../../components/Header';
 import ImageCarousal from '../../components/ImageCarousal';
 import NavSideBar from '../../components/NavSideBar';
 
+const filterSculptures = (price: number | null) => {
+    if (price !== null) {
+        return SculptureData.filter(sculpture => sculpture.price !== null);
+    }
+    return SculptureData.filter(sculpture => sculpture.price === null);
+}
+
 const SculpturePage: NextPage = () => {
     const router = useRouter();
     let currentSculptureName = router.query.id;
@@ -19,20 +26,31 @@ const SculpturePage: NextPage = () => {
     let expanded = false;
     if (currentSculptureName === '_forSale' || currentSculptureName === '_gallery') {
         if (currentSculptureName === '_forSale') {
-            sculptures = SculptureData.filter(sculpture => sculpture.forSale === true);
+            sculptures = filterSculptures(1)
         } else if (currentSculptureName === '_gallery') {
-            sculptures = SculptureData.filter(sculpture => sculpture.forSale === false);
+            sculptures = filterSculptures(null)
         }
         currentSculpture = sculptures[0];
         expanded = true
     } else {
-        currentSculpture = SculptureData.filter(sculpture => sculpture.name === router.query.id)[0];
-        sculptures = SculptureData.filter(sculpture => sculpture.forSale === currentSculpture.forSale);
+        currentSculpture = SculptureData.filter(sculpture => sculpture.title === router.query.id)[0];
+        sculptures = filterSculptures(currentSculpture.price);
     }
 
-    let forSaleText = null;
-    if (currentSculpture.forSale) {
-        forSaleText = <p>To purchase, email anita-sculpts@protonmail.com</p>;
+    let itemDescriptionElement = (<p>
+        <b>Medium:</b> {currentSculpture.medium} | <b>Dimensions:</b> {currentSculpture.dimensions}
+    </p>);
+
+    let forSaleElement = null;
+    if (currentSculpture.price !== null) {
+        itemDescriptionElement = (<p>
+            <b>Medium:</b> {currentSculpture.medium} | <b>Dimensions:</b> {currentSculpture.dimensions} | <b>Price:</b> {currentSculpture.price}
+        </p>);
+        forSaleElement = (
+            <div>
+                <p>To purchase, email anita-sculpts@protonmail(dot)com</p>
+            </div>
+        );
     }
     
     return (
@@ -43,10 +61,10 @@ const SculpturePage: NextPage = () => {
             <div className="sculpture-container">
                 <ImageCarousal images={currentSculpture.images} />
                 <div className="sculpture-text-container">
-                    <Header>{currentSculpture.name}</Header>
+                    <Header>{currentSculpture.title}</Header>
                     <div className="sculpture-body-text-container">
-                        <p>{currentSculpture.description}</p>
-                        {forSaleText}
+                        {itemDescriptionElement}
+                        {forSaleElement}
                     </div>
                 </div>
             </div>

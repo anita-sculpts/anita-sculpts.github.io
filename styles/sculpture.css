@@ -43,11 +43,12 @@
 
 .sculpture-body-text-container {
     padding-left: 8px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 775px) {
     .sculpture-page-container {
-        height: 130vh;
+        height: 135vh;
     }
 
     .sculpture-text-container {

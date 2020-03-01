@@ -574,26 +574,36 @@ function (_React$Component) {
       var forSale = this.props.forSale;
       var data = Array(40).fill(forSale ? _sculpture_data_json__WEBPACK_IMPORTED_MODULE_14__[0] : _sculpture_data_json__WEBPACK_IMPORTED_MODULE_14__[2]).map(function (x) {
         return _objectSpread({}, x, {
-          forSale: Math.random() > 0.5
+          price: Math.random() > 0.5 ? null : 1
         });
       });
+      var sculptures = [];
+
+      if (forSale) {
+        sculptures = data.filter(function (sculpture) {
+          return sculpture.price !== null;
+        });
+      } else {
+        sculptures = data.filter(function (sculptures) {
+          return sculptures.price === null;
+        });
+      }
+
       return __jsx("div", {
         className: "sculptures-list-container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 23
         },
         __self: this
-      }, data.filter(function (sculpture) {
-        return sculpture.forSale === forSale;
-      }).map(function (sculpture, i) {
+      }, sculptures.map(function (sculpture, i) {
         return __jsx(_SculptureThumbnail__WEBPACK_IMPORTED_MODULE_13__["default"], {
           key: i,
-          imageName: sculpture.name,
+          imageName: sculpture.title,
           imageUrl: sculpture.images[0],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 19
+            lineNumber: 24
           },
           __self: this
         });
@@ -9716,14 +9726,14 @@ var Index = function Index() {
 /*!*****************************!*\
   !*** ./sculpture_data.json ***!
   \*****************************/
-/*! exports provided: 0, 1, 2, 3, default */
+/*! exports provided: 0, 1, 2, 3, 4, 5, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Sculpture\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 2\",\"forSale\":true,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"name\":\"Sculpture 3\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"name\":\"Sculpture 4\",\"forSale\":false,\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\",\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
+module.exports = JSON.parse("[{\"title\":\"Legato\",\"medium\":\"Alabaster—Rootbeer\",\"dimensions\":\"16” x 10 ½”x 8 ½”\",\"price\":5200,\"images\":[\"https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"title\":\"Reverie\",\"medium\":\"Alabaster—Oystershell\",\"dimensions\":\"12” x 20”x 10”\",\"price\":5800,\"images\":[\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\",\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\"]},{\"title\":\"Black Moon Rising\",\"medium\":\"African Wonderstone\",\"dimensions\":\"11” x 16” x 8”\",\"price\":null,\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"title\":\"Nosedive\",\"medium\":\"Clear Acrylic\",\"dimensions\":\"4” x 19 ½” x 4”\",\"price\":5600,\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"title\":\"Sublime\",\"medium\":\"Marble—Bianco Puro\",\"dimensions\":\"12” x 11 ½” x 6 ½”\",\"price\":6800,\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]},{\"title\":\"In the Garden\",\"medium\":\"Sculpture: Alabaster—Black, Base: Soapstone—Italian Green\",\"dimensions\":\"18” x 12” x 20”\",\"price\":null,\"images\":[\"https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\",\"https://images.pexels.com/photos/1021754/pexels-photo-1021754.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260\"]}]");
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fnick%2FDesktop%2Fsculpture-site%2Fpages%2Findex.tsx ***!
   \******************************************************************************************************************************/
@@ -9746,5 +9756,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

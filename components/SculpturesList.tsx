@@ -10,16 +10,21 @@ export default class SculpturesList extends React.Component<Props> {
     render() {
         const {forSale} = this.props;
         const data = Array(40).fill(forSale ? SculptureData[0] : SculptureData[2]).map((x) => {
-            return {...x, forSale: Math.random() > 0.5}
+            return {...x, price: Math.random() > 0.5 ? null : 1}
         });
+        let sculptures: Array<Sculpture> = [];
+        if (forSale) {
+            sculptures = data.filter(sculpture => sculpture.price !== null); 
+        } else {
+            sculptures = data.filter(sculptures => sculptures.price === null);
+        }
 
         return (
             <div className="sculptures-list-container">
-                {data.filter(sculpture => sculpture.forSale === forSale)
-                    .map((sculpture, i) => <SculptureThumbnail key={i}
-                        imageName={sculpture.name}
+                {sculptures.map((sculpture, i) => <SculptureThumbnail key={i}
+                        imageName={sculpture.title}
                         imageUrl={sculpture.images[0]}
-                        />)}
+                    />)}
             </div>
         );
     }
