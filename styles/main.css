@@ -43,26 +43,26 @@ html, body {
 
 .for-sale-container {
     background: url("../images/ep_naturalwhite.png");
-    top: 100vh;
-    bottom: -100vh;
+    top: 100%;
+    bottom: -100%;
 }
 
 .container-divider {
     background: url("../images/lighthouse.jpg") no-repeat center center fixed;
     background-size: cover;
-    top: 200vh;
-    bottom: -230vh;
+    top: 200%;
+    bottom: -230%;
 }
 
 .gallery-container {
     background: url("../images/ep_naturalwhite.png");
-    top: 230vh;
-    bottom: -230vh;
+    top: 230%;
+    bottom: -230%;
 }
 
 .about-container {
     background: #333;
-    top: 330vh;
+    top: 330%;
 }
 
 .text-container {
