@@ -7,7 +7,7 @@ const assetPrefix = isProd ? '' : ''
 module.exports = {
   exportPathMap: () => ({
     '/': { page: '/' },
-    '/p/id': { page: '/p/[id]' }
+    '/p/[id]': { page: '/p/[id]' }
   }),
   assetPrefix: assetPrefix,
   webpack: config => {
