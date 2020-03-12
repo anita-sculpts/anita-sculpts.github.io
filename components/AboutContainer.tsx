@@ -10,7 +10,7 @@ export default () => (
             <p>She is the recipient of the Peacock Award and has participated in numerous exhibits in New York at LaGuardia Airport, St. John’s College, United Artists Theater at Broadway, Post College, Chelsea Center, L.I. and the Weisser Library.  She has been a member of the Alliance of Queens Artists, the Great Neck Artists’ Network, and the Catherine Lollard Wolf Art Club.</p>
             <p>Ms. Ohriker was born in Istanbul, Turkey, and lived in Holland, Italy and France before coming to the United States at the age of 8.  She is a graduate of Barnard College where she majored in Art History/Environmental Sciences.  Her first exposure to sculpting was at Columbia University, which awakened an interest to pursue further study at the Aline Geist Sculpture Workshop.</p>
             <p>The majority of her work has been acquired; however, there are several pieces available for purchase, and she may be commissioned to create a unique sculpture for a patron.</p>
-            <p>Email: anita-sculpts@protonmail(dot)com</p>
+            <p>Email: ansculptor@aol(dot)com</p>
         </div>
         <Header color="white" addTopMargin={true}>
             FAQ
