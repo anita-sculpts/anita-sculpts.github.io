@@ -248,7 +248,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     lineNumber: 26
   },
   __self: undefined
-}, "As an artist, this is my least favorite part of the process.  How do you put value on something that you\u2019ve spent months creating? You have to calculate the cost of the materials\u2014the larger the piece, the more the stone costs; the cost of studio time\u2014the more complicated the piece, the longer it takes to complete; the cost of mounting\u2014what sort of base would compliment the piece; and how much your time is worth. More often then not, by the time I factor in all the other costs, my time gets written off as a labor of love.  Needless to say, this is not considered good business, but I\u2019ve never claimed to be a good business person, I have, however, been told I am a good artist.")))));
+}, "As an artist, this is my least favorite part of the process.  How do you put value on something that you\u2019ve spent months creating? You have to calculate the cost of the materials\u2014the larger the piece, the more the stone costs; the cost of studio time\u2014the more complicated the piece, the longer it takes to complete; the cost of mounting\u2014what sort of base would compliment the piece; and how much your time is worth. More often then not, by the time I factor in all the other costs, my time gets written off as a labor of love.  Needless to say, this is not considered good business, but I\u2019ve never claimed to be a good business person, I have, however, been told I am a good artist.")), __jsx("p", {
+  className: "text-end",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}, "***"))));
 
 /***/ }),
 

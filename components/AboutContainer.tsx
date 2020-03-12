@@ -24,6 +24,7 @@ export default () => (
             <p><i>All the sculptures that are available are so noted and certainly for sale. Otherwise, if a certain sculpture that has already been acquired appeals to you, I can make something similar (but not exactly alike). The only way it would be an exact replica would be to have it cast and bronzed and then it wouldn’t be a stone sculpture.  Each sculpture that is made of stone is unique due to the nature of stone—it is impossible to predict the grain and the intensity of color.</i></p>
             <p>How do you price your work?</p>
             <p><i>As an artist, this is my least favorite part of the process.  How do you put value on something that you’ve spent months creating? You have to calculate the cost of the materials—the larger the piece, the more the stone costs; the cost of studio time—the more complicated the piece, the longer it takes to complete; the cost of mounting—what sort of base would compliment the piece; and how much your time is worth. More often then not, by the time I factor in all the other costs, my time gets written off as a labor of love.  Needless to say, this is not considered good business, but I’ve never claimed to be a good business person, I have, however, been told I am a good artist.</i></p>
+            <p className="text-end">***</p>
         </div>
     </div>
 );

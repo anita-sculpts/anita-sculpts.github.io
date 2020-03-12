@@ -72,6 +72,10 @@ html, body {
     margin-right: 15vw;
 }
 
+.text-end {
+    text-align: center;
+}
+
 .sculptures-list-container {
     display: flex;
     flex-wrap: wrap;
