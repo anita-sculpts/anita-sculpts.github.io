@@ -36,13 +36,16 @@ export default class ImageCarousal extends React.Component<Props, State> {
     }
 
     render() {
+        const carousalControls = this.state.images.length === 0 ? null : (
+            <div className="carousal-controls-container">
+                <div className="carousal-control" onClick={this.moveLeft}>&#8592;</div>
+                <div className="carousal-control" onClick={this.moveRight}>&#8594;</div>
+            </div>
+        );
         return (
             <div className='sculpture-photo-container'>
                 <img className='sculpture-photo' src={this.state.images[this.state.index]} />
-                <div className="carousal-controls-container">
-                    <div className="carousal-control" onClick={this.moveLeft}>&#8592;</div>
-                    <div className="carousal-control" onClick={this.moveRight}>&#8594;</div>
-                </div>
+                {carousalControls}
             </div>
         );
     }
