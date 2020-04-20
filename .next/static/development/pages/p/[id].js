@@ -9552,7 +9552,7 @@ module.exports = JSON.parse("[{\"title\":\"Legato\",\"medium\":\"Alabaster—Roo
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2Fhome%2Fnick%2FDesktop%2Fsculpture-site%2Fpages%2Fp%2F%5Bid%5D.tsx ***!
   \*************************************************************************************************************************************************/
@@ -9575,5 +9575,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

@@ -12,4 +12,4 @@ module.exports = JSON.parse("[{\"title\":\"Legato\",\"medium\":\"Alabaster—Roo
 /***/ })
 
 })
-//# sourceMappingURL=index.js.80662ce4660ac045f4c5.hot-update.js.map
+//# sourceMappingURL=index.js.219dcdc80464e7c21cc8.hot-update.js.map
