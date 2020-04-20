@@ -4,8 +4,8 @@
         "medium": "Alabaster—Rootbeer",
         "dimensions": "16” x 10 ½”x 8 ½”",
         "price": 5200,
-        "images":["https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
-        "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/legato.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/legato_thumbnail.jpg?raw=true"
     },
     {
         "title": "Reverie",
@@ -36,8 +36,8 @@
         "medium": "Marble—Bianco Puro",
         "dimensions": "12” x 11 ½” x 6 ½”",
         "price": 6800,
-        "images":["https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
-        "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/sublime.jpg"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/sublime_thumbnail.jpg?raw=true"
     },
     {
         "title": "In the Garden",
@@ -132,8 +132,8 @@
         "medium": "Alabaster—White",
         "dimensions": "20” x 7” x 8”",
         "price": 6800,
-        "images":["https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
-        "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/siesta.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/siesta_thumbnail.jpg?raw=true"
     },
     {
         "title": "Just Looking",
@@ -156,8 +156,8 @@
         "medium": "Agate—Gold",
         "dimensions": "15” x 12” x 10”",
         "price": 6300,
-        "images":["https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
-        "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/peak.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/peak_thumbnail.jpg?raw=true"
     },
     {
         "title": "Cozy",
@@ -172,16 +172,16 @@
         "medium": "Sculpture: Alabaster—Butterscotch, Base: Maplewood",
         "dimensions": "12” x 11 ½” x 5 ½” (including base)",
         "price": 5600,
-        "images":["https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
-        "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/gazing_up.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/gazing_up_thumbnail.jpg?raw=true"
     },
     {
         "title": "Gazing Up Too",
         "medium": "Sculpture: Alabaster—Butterscotch, Base: Wizard's Myst",
         "dimensions": "12” x 7” x 11 ½” (including base)",
         "price": 5400,
-        "images":["https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
-        "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/gazing_up_too.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/gazing_up_too_thumbnail.jpg?raw=true"
     },
     {
         "title": "Surf’s Up",
@@ -204,8 +204,8 @@
         "medium": "Alabaster—Green & Red",
         "dimensions": "24” x 10” 10”",
         "price": 6800,
-        "images":["https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
-        "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/precarious.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/precarious_thumbnail.jpg?raw=true"
     },
     {
         "title": "Reconstruction",
