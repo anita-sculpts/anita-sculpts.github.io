@@ -93,6 +93,28 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "../next-server/lib/router-context":
+/*!**************************************************************!*\
+  !*** external "next/dist/next-server/lib/router-context.js" ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/next-server/lib/router-context.js");
+
+/***/ }),
+
+/***/ "../next-server/lib/utils":
+/*!*****************************************************!*\
+  !*** external "next/dist/next-server/lib/utils.js" ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/next-server/lib/utils.js");
+
+/***/ }),
+
 /***/ "./components/AboutContainer.tsx":
 /*!***************************************!*\
   !*** ./components/AboutContainer.tsx ***!
@@ -111,150 +133,173 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
   className: "container about-container",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
+    lineNumber: 4,
+    columnNumber: 5
+  }
 }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
   color: "white",
   addTopMargin: true,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
+    lineNumber: 5,
+    columnNumber: 9
+  }
 }, "About"), __jsx("div", {
   className: "text-container",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
+    lineNumber: 8,
+    columnNumber: 9
+  }
 }, __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
+    lineNumber: 9,
+    columnNumber: 13
+  }
 }, "Ms. Ohriker has been sculpting since 1989.  She works primarily in stone.  Her pieces consist of Alabaster, Agate, Marble, Limestone and African Wonderstone.  She has also worked with Acrylic, which affords a unique three-dimensional quality to a subject.  Her pieces are mostly abstract or representational as she prefers a direct approach to carving although she does have realistic pieces, such as a bust of her father, in her collection."), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
+    lineNumber: 10,
+    columnNumber: 13
+  }
 }, "She is the recipient of the Peacock Award and has participated in numerous exhibits in New York at LaGuardia Airport, St. John\u2019s College, United Artists Theater at Broadway, Post College, Chelsea Center, L.I. and the Weisser Library.  She has been a member of the Alliance of Queens Artists, the Great Neck Artists\u2019 Network, and the Catherine Lollard Wolf Art Club."), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
+    lineNumber: 11,
+    columnNumber: 13
+  }
 }, "Ms. Ohriker was born in Istanbul, Turkey, and lived in Holland, Italy and France before coming to the United States at the age of 8.  She is a graduate of Barnard College where she majored in Art History/Environmental Sciences.  Her first exposure to sculpting was at Columbia University, which awakened an interest to pursue further study at the Aline Geist Sculpture Workshop."), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
+    lineNumber: 12,
+    columnNumber: 13
+  }
 }, "The majority of her work has been acquired; however, there are several pieces available for purchase."), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
+    lineNumber: 13,
+    columnNumber: 13
+  }
 }, "Email: ansculptor@aol(dot)com")), __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
   color: "white",
   addTopMargin: true,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
+    lineNumber: 15,
+    columnNumber: 9
+  }
 }, "FAQ"), __jsx("div", {
   className: "text-container",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
-  },
-  __self: undefined
+    lineNumber: 18,
+    columnNumber: 9
+  }
 }, __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
+    lineNumber: 19,
+    columnNumber: 13
+  }
 }, "How long does it take to make a sculpture?"), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
+    lineNumber: 20,
+    columnNumber: 13
+  }
 }, __jsx("i", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
+    lineNumber: 20,
+    columnNumber: 16
+  }
 }, "It depends on how complicated a piece it is.  Making a sculpture involves picking out a stone, deciding on a subject if it\u2019s an indirect carving (something representational), or seeing where the stone takes you if it\u2019s a direct carving (abstract).  Sometimes, it goes smoothly, but sometimes it\u2019s more challenging.  Once you have completed giving shape to the stone (chiseling), there is the process of finishing\u2014rasping, sanding, and polishing\u2014before you have the final product. Then comes the mounting\u2014this requires putting a pin in the stone so that you can anchor it to a base. On average, it usually takes me 4 to 6 months to complete a piece.")), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
-  },
-  __self: undefined
+    lineNumber: 21,
+    columnNumber: 13
+  }
 }, "How do you decide what to make?"), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
-  },
-  __self: undefined
+    lineNumber: 22,
+    columnNumber: 13
+  }
 }, __jsx("i", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
-  },
-  __self: undefined
+    lineNumber: 22,
+    columnNumber: 16
+  }
 }, "Sometimes, in the course of my everyday life, something catches my eye, and I think it would be an interesting subject to carve.  But more often, I\u2019ve been fortunate in knowing the people for whom I\u2019ve made sculptures, and I direct my efforts to what is relevant to them.  Each piece has a story\u2014when my friend had a second child, her first child was 3 years old (constantly seeking her attention), so \u201CDivided Attention\u201D came about; when my cousin graduated from optometry school, I made \u201CBlink\u201D, to represent an abstract eye; I made \u201CUnderarms\u201D and \u201CBikini Line\u201D for my friend who owns a spa specializing in hair removal.  I made \u201CJust Looking,\" (something I often hear in my line of work) for the challenge of carving a pair of glasses out of stone.  My sculptures have a personal appeal to their owner\u2019s, therefore each feels their piece is special.  If I don\u2019t have anyone in mind when starting a sculpture, I let the stone guide me, \u201CPeak\u201D, \u201CEvolution\u201D, \u201CGazing Up\u201D and \u201CGazing Up Too\u201D are examples of this.")), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
-  },
-  __self: undefined
+    lineNumber: 23,
+    columnNumber: 13
+  }
 }, "Are the sculptures you have for sale?"), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
-  },
-  __self: undefined
+    lineNumber: 24,
+    columnNumber: 13
+  }
 }, __jsx("i", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
-  },
-  __self: undefined
+    lineNumber: 24,
+    columnNumber: 16
+  }
 }, "All the sculptures that are available are so noted and certainly for sale.")), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 25
-  },
-  __self: undefined
+    lineNumber: 25,
+    columnNumber: 13
+  }
 }, "How do you price your work?"), __jsx("p", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 26
-  },
-  __self: undefined
+    lineNumber: 26,
+    columnNumber: 13
+  }
 }, __jsx("i", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 26
-  },
-  __self: undefined
+    lineNumber: 26,
+    columnNumber: 16
+  }
 }, "I calculate prices from the cost of materials, the cost of studio time, and the number of hours that went into a piece.")), __jsx("p", {
   className: "text-end",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
-  },
-  __self: undefined
+    lineNumber: 27,
+    columnNumber: 13
+  }
 }, "***"))));
 
 /***/ }),
@@ -275,11 +320,12 @@ var _jsxFileName = "/home/nick/Desktop/sculpture-site/components/ContainerDivide
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
   className: "container-divider container",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
+    lineNumber: 2,
+    columnNumber: 5
+  }
 }));
 
 /***/ }),
@@ -306,32 +352,36 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
   className: "container thumbnail-container for-sale-container",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
+    lineNumber: 6,
+    columnNumber: 5
+  }
 }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
   addTopMargin: true,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
+    lineNumber: 7,
+    columnNumber: 9
+  }
 }, "Available for Purchase"), __jsx(_SculpturesList__WEBPACK_IMPORTED_MODULE_2__["default"], {
   forSale: true,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
+    lineNumber: 10,
+    columnNumber: 9
+  }
 }), __jsx(_SculpturesSeeAll__WEBPACK_IMPORTED_MODULE_3__["default"], {
   forSale: true,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
+    lineNumber: 11,
+    columnNumber: 9
+  }
 })));
 
 /***/ }),
@@ -358,32 +408,36 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
   className: "container thumbnail-container gallery-container",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
+    lineNumber: 6,
+    columnNumber: 5
+  }
 }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
   addTopMargin: true,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
+    lineNumber: 7,
+    columnNumber: 9
+  }
 }, "Gallery"), __jsx(_SculpturesList__WEBPACK_IMPORTED_MODULE_2__["default"], {
   forSale: false,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
+    lineNumber: 10,
+    columnNumber: 9
+  }
 }), __jsx(_SculpturesSeeAll__WEBPACK_IMPORTED_MODULE_3__["default"], {
   forSale: false,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
+    lineNumber: 11,
+    columnNumber: 9
+  }
 })));
 
 /***/ }),
@@ -425,11 +479,12 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     return __jsx("h1", {
       className: "header",
       style: style,
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
+        lineNumber: 24,
+        columnNumber: 13
+      }
     }, children);
   }
 
@@ -455,32 +510,36 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
   className: "container intro-container",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
+    lineNumber: 4,
+    columnNumber: 5
+  }
 }, __jsx("div", {
   className: "header-container intro-header-container",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
+    lineNumber: 5,
+    columnNumber: 9
+  }
 }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
   useSerif: true,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
+    lineNumber: 6,
+    columnNumber: 13
+  }
 }, "Sculptures"), __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
   useSerif: true,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
+    lineNumber: 9,
+    columnNumber: 13
+  }
 }, "by Anita"))));
 
 /***/ }),
@@ -494,16 +553,19 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/home/nick/Desktop/sculpture-site/components/Link.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 
 
 const assetPrefix = "";
@@ -512,17 +574,18 @@ const Link = (_ref) => {
   let {
     href
   } = _ref,
-      rest = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["href"]);
+      rest = _objectWithoutProperties(_ref, ["href"]);
 
-  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, _extends({
     href: href,
     as: `${assetPrefix}${href}`
   }, rest, {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: undefined
+      lineNumber: 7,
+      columnNumber: 3
+    }
   }));
 };
 
@@ -556,25 +619,28 @@ class SculptureThumbnail extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Co
     return __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
       href: "/p/[id]",
       as: `/p/${imageName}`,
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
+        lineNumber: 15,
+        columnNumber: 13
+      }
     }, __jsx("a", {
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
+        lineNumber: 16,
+        columnNumber: 17
+      }
     }, __jsx("img", {
       className: "sculpture-thumbnail",
       src: imageUrl,
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
+        lineNumber: 17,
+        columnNumber: 21
+      }
     })));
   }
 
@@ -618,20 +684,22 @@ class SculpturesList extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Compon
 
     return __jsx("div", {
       className: "sculptures-list-container",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
+        lineNumber: 20,
+        columnNumber: 13
+      }
     }, sculptures.map((sculpture, i) => __jsx(_SculptureThumbnail__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: i,
       imageName: sculpture.title,
       imageUrl: sculpture.thumbnail,
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
+        lineNumber: 21,
+        columnNumber: 51
+      }
     })));
   }
 
@@ -665,18 +733,20 @@ class SculpturesSeeAll extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Comp
     return __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
       href: "/p/[id]",
       as: `/p/${forSale ? "_forSale" : "_gallery"}`,
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
+        lineNumber: 14,
+        columnNumber: 13
+      }
     }, __jsx("a", {
       className: "see-all",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
+        lineNumber: 15,
+        columnNumber: 17
+      }
     }, "See All"));
   }
 
@@ -684,263 +754,10 @@ class SculpturesSeeAll extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Comp
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/map */ "core-js/library/fn/map");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
+/***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
+  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
   \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "core-js/library/fn/object/assign");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/create.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "core-js/library/fn/object/create");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "core-js/library/fn/object/get-own-property-descriptor");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core-js/library/fn/object/keys");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/library/fn/promise");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/symbol */ "core-js/library/fn/symbol");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/symbol/iterator */ "core-js/library/fn/symbol/iterator");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/weak-map.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/weak-map.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
-
-function _extends() {
-  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js":
-/*!************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js ***!
-  \************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutProperties; });
-/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
-/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutPropertiesLoose.js");
-
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = Object(_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(source, excluded);
-  var key, i;
-
-  if (_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default.a) {
-    var sourceSymbolKeys = _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default()(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*****************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
-/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__);
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-
-  var sourceKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(source);
-
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/extends.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/extends.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _Object$assign = __webpack_require__(/*! ../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-
-function _extends() {
-  module.exports = _extends = _Object$assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-module.exports = _extends;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
-  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -954,24 +771,18 @@ module.exports = _interopRequireDefault;
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js ***!
-  \*******************************************************************************/
+/***/ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/interopRequireWildcard.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _Object$getOwnPropertyDescriptor = __webpack_require__(/*! ../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
-
-var _Object$defineProperty = __webpack_require__(/*! ../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
-var _typeof = __webpack_require__(/*! ../helpers/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/typeof.js");
-
-var _WeakMap = __webpack_require__(/*! ../core-js/weak-map */ "./node_modules/@babel/runtime-corejs2/core-js/weak-map.js");
+var _typeof = __webpack_require__(/*! ../helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
 
 function _getRequireWildcardCache() {
-  if (typeof _WeakMap !== "function") return null;
-  var cache = new _WeakMap();
+  if (typeof WeakMap !== "function") return null;
+  var cache = new WeakMap();
 
   _getRequireWildcardCache = function _getRequireWildcardCache() {
     return cache;
@@ -998,14 +809,14 @@ function _interopRequireWildcard(obj) {
   }
 
   var newObj = {};
-  var hasPropertyDescriptor = _Object$defineProperty && _Object$getOwnPropertyDescriptor;
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
 
   for (var key in obj) {
     if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? _Object$getOwnPropertyDescriptor(obj, key) : null;
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
 
       if (desc && (desc.get || desc.set)) {
-        _Object$defineProperty(newObj, key, desc);
+        Object.defineProperty(newObj, key, desc);
       } else {
         newObj[key] = obj[key];
       }
@@ -1025,27 +836,23 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/typeof.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/typeof.js ***!
-  \***************************************************************/
+/***/ "./node_modules/@babel/runtime/helpers/typeof.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
+  \*******************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-var _Symbol$iterator = __webpack_require__(/*! ../core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
-
-var _Symbol = __webpack_require__(/*! ../core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
-
-function _typeof2(obj) { if (typeof _Symbol === "function" && typeof _Symbol$iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof _Symbol === "function" && obj.constructor === _Symbol && obj !== _Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
-  if (typeof _Symbol === "function" && _typeof2(_Symbol$iterator) === "symbol") {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
     module.exports = _typeof = function _typeof(obj) {
       return _typeof2(obj);
     };
   } else {
     module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof _Symbol === "function" && obj.constructor === _Symbol && obj !== _Symbol.prototype ? "symbol" : _typeof2(obj);
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
     };
   }
 
@@ -1066,22 +873,22 @@ module.exports = _typeof;
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
 
 exports.__esModule = true;
 exports.default = void 0;
 
-var _map = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/map */ "./node_modules/@babel/runtime-corejs2/core-js/map.js"));
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 
 var _url = __webpack_require__(/*! url */ "url");
 
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "../next-server/lib/utils");
 
 var _router = _interopRequireDefault(__webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js"));
 
-var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "./node_modules/next/dist/next-server/lib/utils.js");
+var _router2 = __webpack_require__(/*! ../next-server/lib/router/router */ "./node_modules/next/dist/next-server/lib/router/router.js");
 
 function isLocal(href) {
   var url = (0, _url.parse)(href, false, true);
@@ -1111,7 +918,7 @@ function formatUrl(url) {
 }
 
 var observer;
-var listeners = new _map.default();
+var listeners = new Map();
 var IntersectionObserver = false ? undefined : null;
 var prefetched = {};
 
@@ -1174,13 +981,12 @@ class Link extends _react.Component {
 
     this.formatUrls = memoizedFormatUrl((href, asHref) => {
       return {
-        href: formatUrl(href),
-        as: asHref ? formatUrl(asHref) : asHref
+        href: (0, _router2.addBasePath)(formatUrl(href)),
+        as: asHref ? (0, _router2.addBasePath)(formatUrl(asHref)) : asHref
       };
     });
 
     this.linkClicked = e => {
-      // @ts-ignore target exists on currentTarget
       var {
         nodeName,
         target
@@ -1242,21 +1048,23 @@ class Link extends _react.Component {
     this.cleanUpListeners();
   }
 
-  getHref() {
+  getPaths() {
     var {
       pathname
     } = window.location;
     var {
-      href: parsedHref
+      href: parsedHref,
+      as: parsedAs
     } = this.formatUrls(this.props.href, this.props.as);
-    return (0, _url.resolve)(pathname, parsedHref);
+    var resolvedHref = (0, _url.resolve)(pathname, parsedHref);
+    return [resolvedHref, parsedAs ? (0, _url.resolve)(pathname, parsedAs) : resolvedHref];
   }
 
   handleRef(ref) {
-    var isPrefetched = prefetched[this.getHref()];
-
     if (this.p && IntersectionObserver && ref && ref.tagName) {
       this.cleanUpListeners();
+      var isPrefetched = prefetched[this.getPaths().join( // Join on an invalid URI character
+      '%')];
 
       if (!isPrefetched) {
         this.cleanUpListeners = listenToIntersections(ref, () => {
@@ -1268,14 +1076,26 @@ class Link extends _react.Component {
   // as per https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
 
 
-  prefetch() {
+  prefetch(options) {
     if (!this.p || true) return; // Prefetch the JSON page if asked (only in the client)
 
-    var href = this.getHref();
+    var paths = this.getPaths(); // We need to handle a prefetch error here since we may be
+    // loading with priority which can reject but we don't
+    // want to force navigation since this is only a prefetch
 
-    _router.default.prefetch(href);
+    _router.default.prefetch(paths[
+    /* href */
+    0], paths[
+    /* asPath */
+    1], options).catch(err => {
+      if (true) {
+        // rethrow to show invalid URL errors
+        throw err;
+      }
+    });
 
-    prefetched[href] = true;
+    prefetched[paths.join( // Join on an invalid URI character
+    '%')] = true;
   }
 
   render() {
@@ -1309,7 +1129,9 @@ class Link extends _react.Component {
           child.props.onMouseEnter(e);
         }
 
-        this.prefetch();
+        this.prefetch({
+          priority: true
+        });
       },
       onClick: e => {
         if (child.props && typeof child.props.onClick === 'function') {
@@ -1379,18 +1201,14 @@ exports.default = _default;
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 exports.__esModule = true;
 exports.useRouter = useRouter;
 exports.makePublicRouterInstance = makePublicRouterInstance;
 exports.createRouter = exports.withRouter = exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "./node_modules/@babel/runtime-corejs2/helpers/extends.js"));
-
-var _defineProperty = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js"));
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
@@ -1399,7 +1217,7 @@ var _router2 = _interopRequireWildcard(__webpack_require__(/*! ../next-server/li
 exports.Router = _router2.default;
 exports.NextRouter = _router2.NextRouter;
 
-var _routerContext = __webpack_require__(/*! ../next-server/lib/router-context */ "./node_modules/next/dist/next-server/lib/router-context.js");
+var _routerContext = __webpack_require__(/*! ../next-server/lib/router-context */ "../next-server/lib/router-context");
 
 var _withRouter = _interopRequireDefault(__webpack_require__(/*! ./with-router */ "./node_modules/next/dist/client/with-router.js"));
 
@@ -1419,11 +1237,11 @@ var singletonRouter = {
 
 }; // Create public properties and methods of the router in the singletonRouter
 
-var urlPropertyFields = ['pathname', 'route', 'query', 'asPath', 'components'];
+var urlPropertyFields = ['pathname', 'route', 'query', 'asPath', 'components', 'isFallback', 'basePath'];
 var routerEvents = ['routeChangeStart', 'beforeHistoryChange', 'routeChangeComplete', 'routeChangeError', 'hashChangeStart', 'hashChangeComplete'];
 var coreMethodFields = ['push', 'replace', 'reload', 'back', 'prefetch', 'beforePopState']; // Events is a static property on the router, the router doesn't have to be initialized to use it
 
-(0, _defineProperty.default)(singletonRouter, 'events', {
+Object.defineProperty(singletonRouter, 'events', {
   get() {
     return _router2.default.events;
   }
@@ -1434,7 +1252,7 @@ urlPropertyFields.forEach(field => {
   // the property assigned to the actual router
   // The value might get changed as we change routes and this is the
   // proper way to access it
-  (0, _defineProperty.default)(singletonRouter, field, {
+  Object.defineProperty(singletonRouter, field, {
     get() {
       var router = getRouter();
       return router[field];
@@ -1515,7 +1333,7 @@ function makePublicRouterInstance(router) {
 
   for (var property of urlPropertyFields) {
     if (typeof _router[property] === 'object') {
-      instance[property] = (0, _extends2.default)({}, _router[property]); // makes sure query is not stateful
+      instance[property] = Object.assign({}, _router[property]); // makes sure query is not stateful
 
       continue;
     }
@@ -1545,12 +1363,10 @@ function makePublicRouterInstance(router) {
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 exports.__esModule = true;
 exports.default = withRouter;
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "./node_modules/@babel/runtime-corejs2/helpers/extends.js"));
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
@@ -1558,7 +1374,7 @@ var _router = __webpack_require__(/*! ./router */ "./node_modules/next/dist/clie
 
 function withRouter(ComposedComponent) {
   function WithRouterWrapper(props) {
-    return _react.default.createElement(ComposedComponent, (0, _extends2.default)({
+    return _react.default.createElement(ComposedComponent, Object.assign({
       router: (0, _router.useRouter)()
     }, props));
   }
@@ -1598,17 +1414,12 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-var _Object$create = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/create */ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js");
-
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
 function mitt() {
-  const all = _Object$create(null);
-
+  const all = Object.create(null);
   return {
     on(type, handler) {
       ;
@@ -1637,36 +1448,6 @@ exports.default = mitt;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/next-server/lib/router-context.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/next/dist/next-server/lib/router-context.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
-var __importStar = this && this.__importStar || function (mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-  result["default"] = mod;
-  return result;
-};
-
-_Object$defineProperty(exports, "__esModule", {
-  value: true
-});
-
-const React = __importStar(__webpack_require__(/*! react */ "react"));
-
-exports.RouterContext = React.createContext(null);
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/next-server/lib/router/router.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/router/router.js ***!
@@ -1677,19 +1458,13 @@ exports.RouterContext = React.createContext(null);
 "use strict";
 
 
-var _Object$assign = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-
-var _Promise = __webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
-
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
 var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
   };
 };
 
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -1705,14 +1480,71 @@ const route_matcher_1 = __webpack_require__(/*! ./utils/route-matcher */ "./node
 
 const route_regex_1 = __webpack_require__(/*! ./utils/route-regex */ "./node_modules/next/dist/next-server/lib/router/utils/route-regex.js");
 
+const basePath =  false || '';
+
 function addBasePath(path) {
-  // @ts-ignore variable is always a string
-  const p = "";
-  return path.indexOf(p) !== 0 ? p + path : path;
+  return path.indexOf(basePath) !== 0 ? basePath + path : path;
+}
+
+exports.addBasePath = addBasePath;
+
+function delBasePath(path) {
+  return path.indexOf(basePath) === 0 ? path.substr(basePath.length) || '/' : path;
 }
 
 function toRoute(path) {
   return path.replace(/\/$/, '') || '/';
+}
+
+const prepareRoute = path => toRoute(!path || path === '/' ? '/index' : path);
+
+function fetchNextData(pathname, query, isServerRender, cb) {
+  let attempts = isServerRender ? 3 : 1;
+
+  function getResponse() {
+    return fetch(utils_1.formatWithValidation({
+      // @ts-ignore __NEXT_DATA__
+      pathname: `/_next/data/${__NEXT_DATA__.buildId}${pathname}.json`,
+      query
+    }), {
+      // Cookies are required to be present for Next.js' SSG "Preview Mode".
+      // Cookies may also be required for `getServerSideProps`.
+      //
+      // > `fetch` won’t send cookies, unless you set the credentials init
+      // > option.
+      // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+      //
+      // > For maximum browser compatibility when it comes to sending &
+      // > receiving cookies, always supply the `credentials: 'same-origin'`
+      // > option instead of relying on the default.
+      // https://github.com/github/fetch#caveats
+      credentials: 'same-origin'
+    }).then(res => {
+      if (!res.ok) {
+        if (--attempts > 0 && res.status >= 500) {
+          return getResponse();
+        }
+
+        throw new Error(`Failed to load static props`);
+      }
+
+      return res.json();
+    });
+  }
+
+  return getResponse().then(data => {
+    return cb ? cb(data) : data;
+  }).catch(err => {
+    // We should only trigger a server-side transition if this was caused
+    // on a client-side transition. Otherwise, we'd get into an infinite
+    // loop.
+    if (!isServerRender) {
+      ;
+      err.code = 'PAGE_LOAD_ERROR';
+    }
+
+    throw err;
+  });
 }
 
 class Router {
@@ -1723,7 +1555,8 @@ class Router {
     wrapApp,
     Component,
     err,
-    subscription
+    subscription,
+    isFallback
   }) {
     // Static Data Cache
     this.sdc = {};
@@ -1752,7 +1585,7 @@ class Router {
       // can be caused by navigating back from an external site
 
 
-      if (e.state && this.isSsr && e.state.url === this.pathname && e.state.as === this.asPath) {
+      if (e.state && this.isSsr && e.state.as === this.asPath && url_1.parse(e.state.url).pathname === this.pathname) {
         return;
       } // If the downstream application returns falsy, return.
       // They will then be responsible for handling the event.
@@ -1777,24 +1610,18 @@ class Router {
       this.replace(url, as, options);
     };
 
-    this._getStaticData = (asPath, _cachedData) => {
-      let pathname = url_1.parse(asPath).pathname;
-      pathname = !pathname || pathname === '/' ? '/index' : pathname;
-      return  false ? undefined : fetch( // @ts-ignore __NEXT_DATA__
-      `/_next/data/${__NEXT_DATA__.buildId}${pathname}.json`).then(res => {
-        if (!res.ok) {
-          throw new Error(`Failed to load static props`);
-        }
+    this._getStaticData = asPath => {
+      const pathname = prepareRoute(url_1.parse(asPath).pathname);
+      return  false ? undefined : fetchNextData(pathname, null, this.isSsr, data => this.sdc[pathname] = data);
+    };
 
-        return res.json();
-      }).then(data => {
-        this.sdc[pathname] = data;
-        return data;
-      }).catch(err => {
-        ;
-        err.code = 'PAGE_LOAD_ERROR';
-        throw err;
-      });
+    this._getServerData = asPath => {
+      let {
+        pathname,
+        query
+      } = url_1.parse(asPath, true);
+      pathname = prepareRoute(pathname);
+      return fetchNextData(pathname, query, this.isSsr);
     }; // represents the current component key
 
 
@@ -1808,7 +1635,9 @@ class Router {
       this.components[this.route] = {
         Component,
         props: initialProps,
-        err
+        err,
+        __N_SSG: initialProps && initialProps.__N_SSG,
+        __N_SSP: initialProps && initialProps.__N_SSP
       };
     }
 
@@ -1816,7 +1645,6 @@ class Router {
       Component: App
     }; // Backwards compat for Router.router.events
     // TODO: Should be remove the following major version as it was never documented
-    // @ts-ignore backwards compatibility
 
     this.events = Router.events;
     this.pageLoader = pageLoader;
@@ -1826,12 +1654,14 @@ class Router {
 
     this.asPath = // @ts-ignore this is temporarily global (attached to window)
     is_dynamic_1.isDynamicRoute(pathname) && __NEXT_DATA__.autoExport ? pathname : as;
+    this.basePath = basePath;
     this.sub = subscription;
     this.clc = null;
     this._wrapApp = wrapApp; // make sure to ignore extra popState in safari on navigating
     // back from external site
 
     this.isSsr = true;
+    this.isFallback = isFallback;
 
     if (false) {}
   } // @deprecated backwards compatibility even though it's a private method.
@@ -1851,10 +1681,11 @@ class Router {
       throw new Error(`Cannot update unavailable route: ${route}`);
     }
 
-    const newData = _Object$assign(_Object$assign({}, data), {
-      Component
+    const newData = Object.assign(Object.assign({}, data), {
+      Component,
+      __N_SSG: mod.__N_SSG,
+      __N_SSP: mod.__N_SSP
     });
-
     this.components[route] = newData; // pages/_app.js updated
 
     if (route === '/_app') {
@@ -1902,7 +1733,7 @@ class Router {
   }
 
   change(method, _url, _as, options) {
-    return new _Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (!options._h) {
         this.isSsr = false;
       } // marking route changes as a navigation start entry
@@ -1914,8 +1745,10 @@ class Router {
       // we'll format them into the string version here.
 
 
-      const url = typeof _url === 'object' ? utils_1.formatWithValidation(_url) : _url;
-      let as = typeof _as === 'object' ? utils_1.formatWithValidation(_as) : _as; // Add the ending slash to the paths. So, we can serve the
+      let url = typeof _url === 'object' ? utils_1.formatWithValidation(_url) : _url;
+      let as = typeof _as === 'object' ? utils_1.formatWithValidation(_as) : _as;
+      url = addBasePath(url);
+      as = addBasePath(as); // Add the ending slash to the paths. So, we can serve the
       // "<page>/index.html" directly for the SSR page.
 
       if (false) {}
@@ -1929,7 +1762,7 @@ class Router {
       if (!options._h && this.onlyAHashChange(as)) {
         this.asPath = as;
         Router.events.emit('hashChangeStart', as);
-        this.changeState(method, url, addBasePath(as));
+        this.changeState(method, url, as, options);
         this.scrollToHash(as);
         Router.events.emit('hashChangeComplete', as);
         return resolve(true);
@@ -1956,8 +1789,7 @@ class Router {
 
       if (!this.urlIsNew(as)) {
         method = 'replaceState';
-      } // @ts-ignore pathname is always a string
-
+      }
 
       const route = toRoute(pathname);
       const {
@@ -1968,24 +1800,26 @@ class Router {
         const {
           pathname: asPathname
         } = url_1.parse(as);
-        const routeMatch = route_matcher_1.getRouteMatcher(route_regex_1.getRouteRegex(route))(asPathname);
+        const routeRegex = route_regex_1.getRouteRegex(route);
+        const routeMatch = route_matcher_1.getRouteMatcher(routeRegex)(asPathname);
 
         if (!routeMatch) {
-          const error = `The provided \`as\` value (${asPathname}) is incompatible with the \`href\` value (${route}). ` + `Read more: https://err.sh/zeit/next.js/incompatible-href-as`;
+          const missingParams = Object.keys(routeRegex.groups).filter(param => !query[param]);
 
-          if (true) {
-            throw new Error(error);
-          } else {}
+          if (missingParams.length > 0) {
+            if (true) {
+              console.warn(`Mismatching \`as\` and \`href\` failed to manually provide ` + `the params: ${missingParams.join(', ')} in the \`href\`'s \`query\``);
+            }
 
-          return resolve(false);
-        } // Merge params into `query`, overwriting any specified in search
-
-
-        _Object$assign(query, routeMatch);
+            return reject(new Error(`The provided \`as\` value (${asPathname}) is incompatible with the \`href\` value (${route}). ` + `Read more: https://err.sh/zeit/next.js/incompatible-href-as`));
+          }
+        } else {
+          // Merge params into `query`, overwriting any specified in search
+          Object.assign(query, routeMatch);
+        }
       }
 
       Router.events.emit('routeChangeStart', as); // If shallow is true and the route exists in the router cache we reuse the previous result
-      // @ts-ignore pathname is always a string
 
       this.getRouteInfo(route, pathname, query, as, shallow).then(routeInfo => {
         const {
@@ -1997,18 +1831,14 @@ class Router {
         }
 
         Router.events.emit('beforeHistoryChange', as);
-        this.changeState(method, url, addBasePath(as), options);
-        const hash = window.location.hash.substring(1);
+        this.changeState(method, url, as, options);
 
         if (true) {
           const appComp = this.components['/_app'].Component;
           window.next.isPrerendered = appComp.getInitialProps === appComp.origGetInitialProps && !routeInfo.Component.getInitialProps;
-        } // @ts-ignore pathname is always defined
+        }
 
-
-        this.set(route, pathname, query, as, _Object$assign(_Object$assign({}, routeInfo), {
-          hash
-        }));
+        this.set(route, pathname, query, as, routeInfo);
 
         if (error) {
           Router.events.emit('routeChangeError', error, as);
@@ -2026,8 +1856,7 @@ class Router {
       if (typeof window.history === 'undefined') {
         console.error(`Warning: window.history is not available.`);
         return;
-      } // @ts-ignore method should always exist on history
-
+      }
 
       if (typeof window.history[method] === 'undefined') {
         console.error(`Warning: window.history.${method} is not available`);
@@ -2036,12 +1865,14 @@ class Router {
     }
 
     if (method !== 'pushState' || utils_1.getURL() !== as) {
-      // @ts-ignore method should always exist on history
       window.history[method]({
         url,
         as,
         options
-      }, null, as);
+      }, // Most browsers currently ignores this parameter, although they may use it in the future.
+      // Passing the empty string here should be safe against future changes to the method.
+      // https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState
+      '', as);
     }
   }
 
@@ -2050,45 +1881,12 @@ class Router {
     // If the route is already rendered on the screen.
 
     if (shallow && cachedRouteInfo && this.route === route) {
-      return _Promise.resolve(cachedRouteInfo);
+      return Promise.resolve(cachedRouteInfo);
     }
 
-    return new _Promise((resolve, reject) => {
-      if (cachedRouteInfo) {
-        return resolve(cachedRouteInfo);
-      }
-
-      this.fetchComponent(route).then(Component => resolve({
-        Component
-      }), reject);
-    }).then(routeInfo => {
-      const {
-        Component
-      } = routeInfo;
-
-      if (true) {
-        const {
-          isValidElementType
-        } = __webpack_require__(/*! react-is */ "react-is");
-
-        if (!isValidElementType(Component)) {
-          throw new Error(`The default export is not a React Component in page: "${pathname}"`);
-        }
-      }
-
-      return this._getData(() => Component.__N_SSG ? this._getStaticData(as) : this.getInitialProps(Component, // we provide AppTree later so this needs to be `any`
-      {
-        pathname,
-        query,
-        asPath: as
-      })).then(props => {
-        routeInfo.props = props;
-        this.components[route] = routeInfo;
-        return routeInfo;
-      });
-    }).catch(err => {
-      return new _Promise(resolve => {
-        if (err.code === 'PAGE_LOAD_ERROR') {
+    const handleError = (err, loadErrorFail) => {
+      return new Promise(resolve => {
+        if (err.code === 'PAGE_LOAD_ERROR' || loadErrorFail) {
           // If we can't load the page it could be one of following reasons
           //  1. Page doesn't exists
           //  2. Page does exist in a different zone
@@ -2111,12 +1909,15 @@ class Router {
           });
         }
 
-        resolve(this.fetchComponent('/_error').then(Component => {
+        resolve(this.fetchComponent('/_error').then(res => {
+          const {
+            page: Component
+          } = res;
           const routeInfo = {
             Component,
             err
           };
-          return new _Promise(resolve => {
+          return new Promise(resolve => {
             this.getInitialProps(Component, {
               err,
               pathname,
@@ -2132,12 +1933,52 @@ class Router {
               resolve(routeInfo);
             });
           });
-        }));
+        }).catch(err => handleError(err, true)));
       });
-    });
+    };
+
+    return new Promise((resolve, reject) => {
+      if (cachedRouteInfo) {
+        return resolve(cachedRouteInfo);
+      }
+
+      this.fetchComponent(route).then(res => resolve({
+        Component: res.page,
+        __N_SSG: res.mod.__N_SSG,
+        __N_SSP: res.mod.__N_SSP
+      }), reject);
+    }).then(routeInfo => {
+      const {
+        Component,
+        __N_SSG,
+        __N_SSP
+      } = routeInfo;
+
+      if (true) {
+        const {
+          isValidElementType
+        } = __webpack_require__(/*! react-is */ "react-is");
+
+        if (!isValidElementType(Component)) {
+          throw new Error(`The default export is not a React Component in page: "${pathname}"`);
+        }
+      }
+
+      return this._getData(() => __N_SSG ? this._getStaticData(as) : __N_SSP ? this._getServerData(as) : this.getInitialProps(Component, // we provide AppTree later so this needs to be `any`
+      {
+        pathname,
+        query,
+        asPath: as
+      })).then(props => {
+        routeInfo.props = props;
+        this.components[route] = routeInfo;
+        return routeInfo;
+      });
+    }).catch(handleError);
   }
 
   set(route, pathname, query, as, data) {
+    this.isFallback = false;
     this.route = route;
     this.pathname = pathname;
     this.query = query;
@@ -2204,14 +2045,15 @@ class Router {
     return this.asPath !== asPath;
   }
   /**
-   * Prefetch `page` code, you may wait for the data during `page` rendering.
+   * Prefetch page code, you may wait for the data during page rendering.
    * This feature only works in production!
-   * @param url of prefetched `page`
+   * @param url the href of prefetched page
+   * @param asPath the as path of the prefetched page
    */
 
 
-  prefetch(url) {
-    return new _Promise((resolve, reject) => {
+  prefetch(url, asPath = url, options = {}) {
+    return new Promise((resolve, reject) => {
       const {
         pathname,
         protocol
@@ -2228,11 +2070,10 @@ class Router {
 
       if (true) {
         return;
-      } // @ts-ignore pathname is always defined
+      }
 
-
-      const route = toRoute(pathname);
-      this.pageLoader.prefetch(route).then(resolve, reject);
+      const route = delBasePath(toRoute(pathname));
+      Promise.all([this.pageLoader.prefetchData(url, delBasePath(asPath)), this.pageLoader[options.priority ? 'loadPage' : 'prefetch'](route)]).then(() => resolve(), reject);
     });
   }
 
@@ -2243,7 +2084,8 @@ class Router {
       cancelled = true;
     };
 
-    const Component = await this.pageLoader.loadPage(route);
+    route = delBasePath(route);
+    const componentResult = await this.pageLoader.loadPage(route);
 
     if (cancelled) {
       const error = new Error(`Abort fetching component for route: "${route}"`);
@@ -2255,7 +2097,7 @@ class Router {
       this.clc = null;
     }
 
-    return Component;
+    return componentResult;
   }
 
   _getData(fn) {
@@ -2328,12 +2170,9 @@ Router.events = mitt_1.default();
 "use strict";
 
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 }); // Identify /[param]/ in route string
-
 
 const TEST_ROUTE = /\/\[[^/]+?\](?=\/|$)/;
 
@@ -2355,11 +2194,7 @@ exports.isDynamicRoute = isDynamicRoute;
 "use strict";
 
 
-var _Object$keys = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -2375,10 +2210,18 @@ function getRouteMatcher(routeRegex) {
       return false;
     }
 
-    const decode = decodeURIComponent;
-    const params = {};
+    const decode = param => {
+      try {
+        return decodeURIComponent(param);
+      } catch (_) {
+        const err = new Error('failed to decode param');
+        err.code = 'DECODE_FAILED';
+        throw err;
+      }
+    };
 
-    _Object$keys(groups).forEach(slugName => {
+    const params = {};
+    Object.keys(groups).forEach(slugName => {
       const g = groups[slugName];
       const m = routeMatch[g.pos];
 
@@ -2386,7 +2229,6 @@ function getRouteMatcher(routeRegex) {
         params[slugName] = ~m.indexOf('/') ? m.split('/').map(entry => decode(entry)) : g.repeat ? [decode(m)] : decode(m);
       }
     });
-
     return params;
   };
 }
@@ -2405,9 +2247,7 @@ exports.getRouteMatcher = getRouteMatcher;
 "use strict";
 
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -2446,11 +2286,7 @@ exports.getRouteRegex = getRouteRegex;
 "use strict";
 
 
-var _Object$keys = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -2462,11 +2298,11 @@ const url_1 = __webpack_require__(/*! url */ "url");
 
 function execOnce(fn) {
   let used = false;
-  let result = null;
+  let result;
   return (...args) => {
     if (!used) {
       used = true;
-      result = fn.apply(this, args);
+      result = fn(...args);
     }
 
     return result;
@@ -2544,7 +2380,7 @@ async function loadGetInitialProps(App, ctx) {
   }
 
   if (true) {
-    if (_Object$keys(props).length === 0 && !ctx.ctx) {
+    if (Object.keys(props).length === 0 && !ctx.ctx) {
       console.warn(`${getDisplayName(App)} returned an empty object from \`getInitialProps\`. This de-optimizes and prevents automatic static optimization. https://err.sh/zeit/next.js/empty-object-getInitialProps`);
     }
   }
@@ -2558,7 +2394,7 @@ exports.urlObjectKeys = ['auth', 'hash', 'host', 'hostname', 'href', 'path', 'pa
 function formatWithValidation(url, options) {
   if (true) {
     if (url !== null && typeof url === 'object') {
-      _Object$keys(url).forEach(key => {
+      Object.keys(url).forEach(key => {
         if (exports.urlObjectKeys.indexOf(key) === -1) {
           console.warn(`Unknown key passed via urlObject into url.format: ${key}`);
         }
@@ -2614,41 +2450,47 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const Index = () => {
   return __jsx("div", {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
+      lineNumber: 10,
+      columnNumber: 9
+    }
   }, __jsx(_components_IntroContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
+      lineNumber: 11,
+      columnNumber: 13
+    }
   }), __jsx(_components_ForSaleContainer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
+      lineNumber: 12,
+      columnNumber: 13
+    }
   }), __jsx(_components_ContainerDivider__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
+      lineNumber: 13,
+      columnNumber: 13
+    }
   }), __jsx(_components_GalleryContainer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
+      lineNumber: 14,
+      columnNumber: 13
+    }
   }), __jsx(_components_AboutContainer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
+      lineNumber: 15,
+      columnNumber: 13
+    }
   }));
 };
 
@@ -2676,127 +2518,6 @@ module.exports = JSON.parse("[{\"title\":\"Legato\",\"medium\":\"Alabaster—Roo
 
 module.exports = __webpack_require__(/*! /home/nick/Desktop/sculpture-site/pages/index.tsx */"./pages/index.tsx");
 
-
-/***/ }),
-
-/***/ "core-js/library/fn/map":
-/*!*****************************************!*\
-  !*** external "core-js/library/fn/map" ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/map");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/assign":
-/*!***************************************************!*\
-  !*** external "core-js/library/fn/object/assign" ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/assign");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/create":
-/*!***************************************************!*\
-  !*** external "core-js/library/fn/object/create" ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/create");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/define-property":
-/*!************************************************************!*\
-  !*** external "core-js/library/fn/object/define-property" ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/define-property");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/get-own-property-descriptor":
-/*!************************************************************************!*\
-  !*** external "core-js/library/fn/object/get-own-property-descriptor" ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/get-own-property-symbols":
-/*!*********************************************************************!*\
-  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/get-own-property-symbols");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/keys":
-/*!*************************************************!*\
-  !*** external "core-js/library/fn/object/keys" ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/keys");
-
-/***/ }),
-
-/***/ "core-js/library/fn/promise":
-/*!*********************************************!*\
-  !*** external "core-js/library/fn/promise" ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/promise");
-
-/***/ }),
-
-/***/ "core-js/library/fn/symbol":
-/*!********************************************!*\
-  !*** external "core-js/library/fn/symbol" ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/symbol");
-
-/***/ }),
-
-/***/ "core-js/library/fn/symbol/iterator":
-/*!*****************************************************!*\
-  !*** external "core-js/library/fn/symbol/iterator" ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/symbol/iterator");
-
-/***/ }),
-
-/***/ "core-js/library/fn/weak-map":
-/*!**********************************************!*\
-  !*** external "core-js/library/fn/weak-map" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/weak-map");
 
 /***/ }),
 
