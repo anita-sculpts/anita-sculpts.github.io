@@ -4,7 +4,8 @@ declare global {
         medium: string,
         dimensions: string,
         price: number?,
-        images: Array<string>
+        images: Array<string>,
+        thumbnail: string
     }
 }
 

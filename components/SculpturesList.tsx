@@ -20,7 +20,7 @@ export default class SculpturesList extends React.Component<Props> {
             <div className="sculptures-list-container">
                 {sculptures.map((sculpture, i) => <SculptureThumbnail key={i}
                         imageName={sculpture.title}
-                        imageUrl={sculpture.images[0]}
+                        imageUrl={sculpture.thumbnail}
                     />)}
             </div>
         );
