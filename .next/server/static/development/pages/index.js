@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -293,11 +293,32 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     columnNumber: 16
   }
 }, "I calculate prices from the cost of materials, the cost of studio time, and the number of hours that went into a piece.")), __jsx("p", {
-  className: "text-end",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 27,
+    columnNumber: 13
+  }
+}, "What advice would you give to aspiring sculptors?"), __jsx("p", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28,
+    columnNumber: 13
+  }
+}, __jsx("i", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28,
+    columnNumber: 16
+  }
+}, "When you are an artist, whatever your medium, you have an innate need to create. You get satisfaction from having your vision come to life. I have been sculpting for over 30 years, and, for me, the most difficult part of creating an abstract sculpture is resisting my tendency to plan ahead.  What I consider some of my best pieces were a result of unexpected breakage. Unlike clay, when you work with stone, wood, or acrylic, once you take something out, you cannot put it back, so the \u201Cnegative space\u201D becomes very important. In sculpture, as well as in life, when you work with preconceptions, you are not open to other possibilities, and it limits your ability to maximize your potential. Lastly, in my opinion, every work of art should be a labor of love. If the result is financial success, that\u2019s a bonus!")), __jsx("p", {
+  className: "text-end",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 29,
     columnNumber: 13
   }
 }, "***"))));
@@ -2509,7 +2530,7 @@ module.exports = JSON.parse("[{\"title\":\"Legato\",\"medium\":\"Alabaster—Roo
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/

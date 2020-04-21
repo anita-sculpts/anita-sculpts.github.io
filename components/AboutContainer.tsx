@@ -24,6 +24,8 @@ export default () => (
             <p><i>All the sculptures that are available are so noted and certainly for sale.</i></p>
             <p>How do you price your work?</p>
             <p><i>I calculate prices from the cost of materials, the cost of studio time, and the number of hours that went into a piece.</i></p>
+            <p>What advice would you give to aspiring sculptors?</p>
+            <p><i>When you are an artist, whatever your medium, you have an innate need to create. You get satisfaction from having your vision come to life. I have been sculpting for over 30 years, and, for me, the most difficult part of creating an abstract sculpture is resisting my tendency to plan ahead.  What I consider some of my best pieces were a result of unexpected breakage. Unlike clay, when you work with stone, wood, or acrylic, once you take something out, you cannot put it back, so the “negative space” becomes very important. In sculpture, as well as in life, when you work with preconceptions, you are not open to other possibilities, and it limits your ability to maximize your potential. Lastly, in my opinion, every work of art should be a labor of love. If the result is financial success, that’s a bonus!</i></p>
             <p className="text-end">***</p>
         </div>
     </div>
