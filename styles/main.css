@@ -119,4 +119,12 @@ html, body {
         margin-left: 10vw;
         margin-right: 10vw;
     }
+
+    .intro-container {
+        background: url("../images/chintatown_nyc_small.jpg") no-repeat center center fixed;
+    }
+
+    .container-divider {
+        background: url("../images/lighthouse_small.jpg") no-repeat center center fixed;
+    }
 }
