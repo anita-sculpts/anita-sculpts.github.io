@@ -1,20 +1,24 @@
 import React from 'react';
 
+import Spinner from './Spinner'
+
 interface Props {
     images: Array<string>;
 }
 
 interface State extends Props {
     index: number;
+    showSpinner: boolean;
 }
 
 export default class ImageCarousal extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
-        this.state = {images: props.images, index: 0};
+        this.state = {images: props.images, index: 0, showSpinner: true};
     
         this.moveLeft = this.moveLeft.bind(this);
         this.moveRight = this.moveRight.bind(this);
+        this.hideSpinner = this.hideSpinner.bind(this)
     }
 
     moveLeft() {
@@ -35,6 +39,11 @@ export default class ImageCarousal extends React.Component<Props, State> {
         }
     }
 
+    hideSpinner() {
+        console.log('hiding')
+        this.setState({showSpinner: false})
+    }
+
     render() {
         const carousalControls = this.state.images.length < 2 ? null : (
             <div className="carousal-controls-container">
@@ -43,8 +52,9 @@ export default class ImageCarousal extends React.Component<Props, State> {
             </div>
         );
         return (
-            <div className='sculpture-photo-container'>
-                <img className='sculpture-photo' src={this.state.images[this.state.index]} />
+            <div className='carousel-container'>
+                <img className='sculpture-photo' src={this.state.images[this.state.index]} onLoad={this.hideSpinner} />
+                <Spinner areaWidth='70vw' areaHeight={'70vh'} show={this.state.showSpinner} />
                 {carousalControls}
             </div>
         );
