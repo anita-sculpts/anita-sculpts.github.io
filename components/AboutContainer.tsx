@@ -1,6 +1,6 @@
 import Header from "./Header";
 
-export default () => (
+const AboutContainer = () => (
     <div className="container about-container">
         <Header color="white" addTopMargin={true}>
             About
@@ -30,3 +30,5 @@ export default () => (
         </div>
     </div>
 );
+
+export default AboutContainer;

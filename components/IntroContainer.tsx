@@ -1,6 +1,6 @@
 import Header from "./Header";
 
-export default () => (
+const IntroContainer = () => (
     <div className="container intro-container">
         <div className="header-container intro-header-container">
             <Header useSerif={true}>
@@ -12,3 +12,5 @@ export default () => (
         </div>
     </div>
 );
+
+export default IntroContainer;

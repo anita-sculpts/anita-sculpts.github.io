@@ -52,6 +52,7 @@ const SculpturePage: NextPage = () => {
             </div>
         );
     }
+    console.log(currentSculpture)
     
     return (
         <div className="sculpture-page-container">

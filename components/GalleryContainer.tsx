@@ -2,7 +2,7 @@ import Header from "./Header";
 import SculpturesList from "./SculpturesList";
 import SculpturesSeeAll from "./SculpturesSeeAll";
 
-export default () => (
+const GalleryContainer = () => (
     <div className="container thumbnail-container gallery-container">
         <Header addTopMargin={true}>
             Gallery
@@ -11,3 +11,5 @@ export default () => (
         <SculpturesSeeAll forSale={false} />
     </div>
 );
+
+export default GalleryContainer;
