@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_nav_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_nav_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/sculpture.css */ "./styles/sculpture.css");
 /* harmony import */ var _styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_sculpture_css__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/home/nick/Desktop/sculpture-site/pages/_app.js";
+var _jsxFileName = "/home/nick/Desktop/portfolio/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 

@@ -222,5 +222,45 @@
         "price": null,
         "images":["https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
         "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "title": "Affection",
+        "medium": "Acrylic",
+        "dimensions": "12” x 4” x 33”, No Base",
+        "price": 6500,
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/affection.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/affection_thumbnail.jpg?raw=true"
+    },
+    {
+        "title": "Caribbean Queen",
+        "medium": "Sculpture: Limestone, Base: Concrete",
+        "dimensions": "Sculpture: 6” x 5” x 16”, Base: 6” x 6” x 3”",
+        "price": 6500,
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/carribbean_queen.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/carribbean_queen_thumbnail.jpg?raw=true"
+    },
+    {
+        "title": "Metropolis",
+        "medium": "Red Raspberry Alabaster",
+        "dimensions": "Sculpture: 12” x 8” x 14”, No Base",
+        "price": 3800,
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/metropolis.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/metropolis_thumbnail.jpg?raw=true"
+    },
+    {
+        "title": "Reticent",
+        "medium": "Blue Mist Alabaster",
+        "dimensions": "Sculpture: 9” x 7” x 9”, No Base",
+        "price": 3800,
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/reticent1.jpg?raw=true", "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/reticent2.jpg?raw=true"],
+        "thumbnail": "https://images.pexels.com/photos/1055068/pexels-photo-1055068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "title": "Twist of Fate",
+        "medium": "Sculpture: Carrara White Marble, Base: Concrete",
+        "dimensions": "Sculpture: 6.5” x 3” x 6.5”, Base: 4” x 5” x 4”",
+        "price": 3900,
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate1.jpg?raw=true", "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate2.jpg?raw=true"],
+        "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate_thumbnail.jpg?raw=true"
     }
 ]
