@@ -52,7 +52,6 @@ const SculpturePage: NextPage = () => {
             </div>
         );
     }
-    console.log(currentSculpture)
     
     return (
         <div className="sculpture-page-container">
@@ -60,7 +59,7 @@ const SculpturePage: NextPage = () => {
                 currentSculpture={currentSculpture}
                 sculptures={sculptures} />
             <div className="sculpture-container">
-                <ImageCarousal images={currentSculpture.images} />
+                <ImageCarousal key={currentSculptureName} images={currentSculpture.images} />
                 <div className="sculpture-text-container">
                     <Header>{currentSculpture.title}</Header>
                     <div className="sculpture-body-text-container">
