@@ -260,7 +260,7 @@
         "medium": "Sculpture: Carrara White Marble, Base: Concrete",
         "dimensions": "Sculpture: 6.5” x 3” x 6.5”, Base: 4” x 5” x 4”",
         "price": 3900,
-        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate1.jpg?raw=true", "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate2.jpg?raw=true"],
+        "images":["https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate1.jpg?raw=true", "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate2.jpg?raw=true", "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate3.jpg?raw=true", "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate4.jpg?raw=true"],
         "thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/twist_of_fate_thumbnail.jpg?raw=true"
     }
 ]
