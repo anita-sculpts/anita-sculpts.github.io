@@ -4,7 +4,7 @@ import SculpturesSeeAll from "./SculpturesSeeAll";
 
 const GalleryContainer = () => (
     <div className="container thumbnail-container gallery-container">
-        <Header addTopMargin={true}>
+        <Header addBottomMargin={true} addTopMargin={true}>
             Gallery
         </Header>
         <SculpturesList forSale={false} />

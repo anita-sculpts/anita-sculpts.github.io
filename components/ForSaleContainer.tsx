@@ -4,7 +4,7 @@ import SculpturesSeeAll from "./SculpturesSeeAll";
 
 const ForSaleContainer = () => (
     <div className="container thumbnail-container for-sale-container">
-        <Header addTopMargin={true}>
+        <Header addBottomMargin={true} addTopMargin={true}>
             Available for Purchase
         </Header>
         <SculpturesList forSale={true} />

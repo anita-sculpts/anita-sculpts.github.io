@@ -13,7 +13,7 @@ export default class SculpturesList extends React.Component<Props> {
         if (forSale) {
             sculptures = SculptureData.filter(sculpture => sculpture.price !== null); 
         } else {
-            sculptures = SculptureData.filter(sculptures => sculptures.price === null);
+            sculptures = SculptureData.filter(sculpture => sculpture.price === null);
         }
 
         return (

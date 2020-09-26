@@ -90,6 +90,7 @@ html, body {
     width: 260px;
     height: 260px;
     margin: 4px;
+    user-select: none;
 }
 
 .sculpture-thumbnail:hover {
