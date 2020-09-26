@@ -48,7 +48,7 @@ const SculpturePage: NextPage = () => {
         </p>);
         forSaleElement = (
             <div>
-                <p>To purchase, email ansculptor@aol(dot)com</p>
+                <p>To purchase, email <i>ansculptor@aol(dot)com</i></p>
             </div>
         );
     }
