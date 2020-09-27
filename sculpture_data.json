@@ -26,8 +26,8 @@
 		"dimensions": "12” x 16” x 10”",
 		"price": null,
 		"images": [
-            "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/bikiniline.jpg",
-            "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/bikiniline_2.jpg"
+            "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/bikiniline.jpg?raw=true",
+            "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/bikiniline_2.jpg?raw=true"
         ],
 		"thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/bikiniline_thumbnail.jpg?raw=true"
 	},
