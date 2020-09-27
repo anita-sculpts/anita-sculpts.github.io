@@ -172,6 +172,16 @@
 		"thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/go_with_the_flow_thumbnail.jpg?raw=true"
 	},
 	{
+		"title": "IL DORT",
+		"medium": "Grey Alabaster",
+		"dimensions": "16” x 8” x 11”",
+		"price": null,
+		"images": [
+			"https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/il_dort.jpg?raw=true"
+		],
+		"thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/il_dort_thumbnail.jpg?raw=true"
+	},
+	{
 		"title": "In the Garden",
 		"medium": "Sculpture: Alabaster—Black, Base: Soapstone—Italian Green",
 		"dimensions": "18” x 12” x 20”",
