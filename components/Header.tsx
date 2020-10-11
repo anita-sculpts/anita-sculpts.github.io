@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface Props {
-    children: (string|JSX.Element)[];
+    children: string|(string|JSX.Element)[];
     addBottomMargin?: boolean;
     addTopMargin?: boolean;
     color?: string;

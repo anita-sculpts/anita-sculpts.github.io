@@ -51,7 +51,7 @@
 
 @media only screen and (max-width: 775px) {
     .sculpture-page-container {
-        height: 135vh;
+        height: 145vh;
     }
 
     .sculpture-text-container {
@@ -61,6 +61,6 @@
 
 @media only screen and (max-height: 412px) {
     .sculpture-page-container {
-        height: 168vh;
+        height: 175vh;
     }
 }

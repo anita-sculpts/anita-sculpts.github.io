@@ -168,7 +168,7 @@ hr {
  @media only screen and (max-width: 775px) {
   #menu {
     width: 80vw;
-    height: 120vh;
+    height: 125vh;
   }
 
   .sculpture-nav-list {
@@ -179,7 +179,7 @@ hr {
 @media only screen and (max-height: 412px) {
   #menu {
     width: 90vw;
-    height: 145vh;
+    height: 150vh;
   }
   .sculpture-nav-list {
     max-height: 125vh;
