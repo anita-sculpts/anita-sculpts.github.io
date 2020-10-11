@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface Props {
-    children: string;
+    children: (string|JSX.Element)[];
     addBottomMargin?: boolean;
     addTopMargin?: boolean;
     color?: string;
@@ -13,7 +13,7 @@ export default class Header extends React.Component<Props> {
     render() {
         const { children, addBottomMargin, addTopMargin, color, fontSize, useSerif } = this.props;
         let style: any = {
-            marginBottom: addBottomMargin ? '0.4em' : '0.1em',
+            marginBottom: addBottomMargin ? '0.4em' : '0em',
             marginTop: addTopMargin ? '0.5em' : '0em',
             color: color ?? '$333',
             fontFamily: useSerif ? "'Judson', serif" : "'Roboto', sans-serif"

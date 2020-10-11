@@ -4,10 +4,7 @@ const IntroContainer = () => (
     <div className="container intro-container">
         <div className="header-container intro-header-container">
             <Header useSerif={true}>
-                Sculptures
-            </Header>
-            <Header useSerif={true}>
-                by Anita
+                Sculptures<br/>by Anita
             </Header>
         </div>
     </div>
