@@ -1,5 +1,15 @@
 [
 	{
+		"title": "Heartfelt",
+		"medium": "Wizard’s Mist Alabaster",
+		"dimensions": "12” x 10.5” x 8”, No Base",
+		"price": null,
+		"images": [
+			"https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/heartfelt.jpg?raw=true"
+		],
+		"thumbnail": "https://github.com/anita-sculpts/portfolio/blob/master/images/sculptures/heartfelt_thumbnail.jpg?raw=true"
+	},
+	{
 		"title": "Affection",
 		"medium": "Acrylic",
 		"dimensions": "12” x 4” x 33”, No Base",
